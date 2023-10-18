@@ -2,7 +2,7 @@
 
 ## **Recommendation Movie App**
 
-##Team Members
+## Team Members
 * Andreea Jinga - andreea2001jinga@gmail.com
 * Andrei Popescu - popescu.andreig333@gmail.com
 * Leonard Rumeghea - leonard.rumeghea@gmail.com
