@@ -5,10 +5,10 @@ class Review {
   final Movie movie;
   final User user;
   final int movieRating;
-  final String castRating;
-  final String directorRating;
-  final String genreRating;
-  final String sciptRating;
+  final int castRating;
+  final int directorRating;
+  final int genreRating;
+  final int sciptRating;
   final String reviewText;
 
   Review(
@@ -24,10 +24,10 @@ class Review {
   Movie getMovie() => movie;
   User getUser() => user;
   int getMovieRating() => movieRating;
-  String getCastRating() => castRating;
-  String getDirectorRating() => directorRating;
-  String getGenreRating() => genreRating;
-  String getScriptRating() => sciptRating;
+  int getCastRating() => castRating;
+  int getDirectorRating() => directorRating;
+  int getGenreRating() => genreRating;
+  int getScriptRating() => sciptRating;
   String getReviewText() => reviewText;
 
   factory Review.fromJson(Map<String, dynamic> json) {

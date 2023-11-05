@@ -8,7 +8,7 @@ class Movie {
   final String title;
   final String releaseDate;
   final Director director;
-  final List<Actor> actors;
+  final List<Actor> cast;
   final List<Genre> genres;
   final Double rating;
 
@@ -16,7 +16,7 @@ class Movie {
       {required this.title,
       required this.releaseDate,
       required this.director,
-      required this.actors,
+      required this.cast,
       required this.genres,
       required this.rating});
 
@@ -27,7 +27,7 @@ class Movie {
         title: json['title'],
         releaseDate: json['releaseDate'],
         director: Director.fromJSON(json['director']),
-        actors: List<Actor>.from(a.map((actor) => Actor.fromJson(actor))),
+        cast: List<Actor>.from(a.map((actor) => Actor.fromJson(actor))),
         genres: List<Genre>.from(g.map((genre) => genreFromString(genre))),
         rating: json['rating']);
   }
@@ -36,7 +36,7 @@ class Movie {
         'title': title,
         'releaseDate': releaseDate,
         'director': director.toJson(),
-        'actors': actors.map((a) => a.toJson()).toList(),
+        'actors': cast.map((a) => a.toJson()).toList(),
         'genres': genres.map((g) => genreToString(g)).toList(),
         'rating': rating
       };
