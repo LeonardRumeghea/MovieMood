@@ -1,4 +1,4 @@
-from recommendation.recommendation_generator import RecommendationGenerator
+from recommendation.proxy.recommendation_generator import RecommendationGenerator
 
 
 class RealRecommendationGenerator(RecommendationGenerator):

@@ -1,5 +1,11 @@
-import torch
-import torch.nn as nn
+try:
+    import torch
+    import torch.nn as nn
+except ImportError:
+    import os
+    os.system("pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118")
+    import torch
+    import torch.nn as nn
 
 
 class RecommendationMLP(nn.Module):
