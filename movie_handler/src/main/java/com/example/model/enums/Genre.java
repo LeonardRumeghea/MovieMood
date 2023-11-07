@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.model.enums;
 
 public enum Genre {
     unknown(0),

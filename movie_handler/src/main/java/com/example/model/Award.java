@@ -1,5 +1,6 @@
 package com.example.model;
 
+import com.example.model.enums.Genre;
 import com.example.searchService.Search;
 
 import java.util.Date;
