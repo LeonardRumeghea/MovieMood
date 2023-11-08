@@ -32,8 +32,8 @@
   * Visitor      - [Movie Microservice]() - by Andreea Jinga
   * Adapter      - [Movie Microservice]() - by Mihai Tomescu
   * Interpreter  - [Mobile Application]() - by Leonard Rumeghea
-  * Proxy        - [Recommendation Microservice]() - by Andrei Popescu
-  * Strategy     - [Recommendation Microservice]() - by Andrei Popescu
+  * Proxy        - [Recommendation Microservice](https://github.com/LeonardRumeghea/MovieMood/tree/main/recommendation_system) - by Andrei Popescu
+  * Strategy     - [Recommendation Microservice](https://github.com/LeonardRumeghea/MovieMood/tree/main/recommendation_system) - by Andrei Popescu
   * Observer     - [Recommendation Microservice]() - by Andreea Jinga
   * Builder      - [Review Microservice]()         - by Leonard Rumeghea
   * Adapter      - [API Gateway]()                 - by Mihai Tomescu
