@@ -26,3 +26,14 @@
 ## Laboratory 3
 * [Requirements](https://docs.google.com/spreadsheets/d/1AARjJGSp5zxv1XKrNgk53ueweanHtuao3DUtyXAjNck/edit?usp=drive_link)
 * [Diagrams](https://drive.google.com/drive/folders/1DkSe1VEOyXQFMXSyBZVwT-fjeeRQ4zqn?usp=drive_link)
+
+## Laboratory 4
+* Design Patterns
+  * Visitor      - [Movie Microservice]() - by Andreea Jinga
+  * Adapter      - [Movie Microservice]() - by Mihai Tomescu
+  * Interpreter  - [Mobile Application]() - by Leonard Rumeghea
+  * Proxy        - [Recommendation Microservice]() - by Andrei Popescu
+  * Strategy     - [Recommendation Microservice]() - by Andrei Popescu
+  * Observer     - [Recommendation Microservice]() - by Andreea Jinga
+  * Builder      - [Review Microservice]()         - by Leonard Rumeghea
+  * Adapter      - [API Gateway]()                 - by Mihai Tomescu
