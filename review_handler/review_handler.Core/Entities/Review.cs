@@ -1,4 +1,4 @@
-﻿namespace review_handler.Core.Entities.Review
+﻿namespace review_handler.Core.Entities
 {
     public class Review
     {
