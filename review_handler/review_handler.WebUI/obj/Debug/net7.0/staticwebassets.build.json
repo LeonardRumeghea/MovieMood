@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cdeBaial6BRPPG5zX/NBdiO2oUufxnmfmd8Se0xGBv0=",
+  "Source": "review_handler.WebUI",
+  "BasePath": "_content/review_handler.WebUI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

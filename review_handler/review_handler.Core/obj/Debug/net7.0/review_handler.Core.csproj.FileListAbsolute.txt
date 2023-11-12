@@ -1,5 +1,12 @@
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\bin\Debug\net7.0\review_handler.Core.deps.json
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\bin\Debug\net7.0\review_handler.Core.dll
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\bin\Debug\net7.0\review_handler.Core.pdb
 D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\obj\Debug\net7.0\review_handler.Core.csproj.AssemblyReference.cache
 D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\obj\Debug\net7.0\review_handler.Core.GeneratedMSBuildEditorConfig.editorconfig
 D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\obj\Debug\net7.0\review_handler.Core.AssemblyInfoInputs.cache
 D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\obj\Debug\net7.0\review_handler.Core.AssemblyInfo.cs
 D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\obj\Debug\net7.0\review_handler.Core.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\obj\Debug\net7.0\review_handler.Core.dll
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\obj\Debug\net7.0\refint\review_handler.Core.dll
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\obj\Debug\net7.0\review_handler.Core.pdb
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\obj\Debug\net7.0\ref\review_handler.Core.dll

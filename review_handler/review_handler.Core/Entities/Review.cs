@@ -3,8 +3,8 @@
     public class Review
     {
         public Guid Id { get; set; }
-        public Movie? Movie { get; set; }
-        public User? User { get; set; }
+        public Guid MovieId { get; set; }
+        public Guid UserId { get; set; }
         public int MovieRating { get; set; }
         public int? CastRating { get; set; }
         public int? DirectorRating { get; set; }
