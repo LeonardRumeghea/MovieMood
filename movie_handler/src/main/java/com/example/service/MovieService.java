@@ -3,6 +3,9 @@ package com.example.service;
 import com.example.model.Movie;
 import com.example.model.enums.Genre;
 import com.example.repository.MovieRepository;
+import com.example.service.rabbitmq.MovieMessageProducer;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,13 +17,17 @@ public class MovieService {
 
 
     private final MovieRepository movieRepository;
+    private final MovieMessageProducer movieMessageProducer;
+    @Autowired
 
-    public MovieService(MovieRepository movieRepository) {
+    public MovieService(MovieRepository movieRepository, MovieMessageProducer movieMessageProducer) {
         this.movieRepository = movieRepository;
+        this.movieMessageProducer = movieMessageProducer;
     }
 
     public void createMovie(Movie movie) {
         movieRepository.save(movie);
+        movieMessageProducer.sendMessage(movie);
     }
 
     public Movie findMovieById(UUID id) {
