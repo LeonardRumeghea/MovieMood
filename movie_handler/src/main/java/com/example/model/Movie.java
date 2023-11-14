@@ -2,10 +2,17 @@ package com.example.model;
 
 import com.example.model.enums.Genre;
 import com.example.searchService.Search;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 import java.util.List;
+import java.util.UUID;
 
+@Entity
 public class Movie {
+
+    @Id
+    private UUID id;
     private String title;
     private int year;
     private List<Actor> cast;
@@ -20,6 +27,10 @@ public class Movie {
         this.genre = genre;
         this.director = director;
         this.rating = rating;
+    }
+
+    public Movie() {
+
     }
 
     public String getTitle() {

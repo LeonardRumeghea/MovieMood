@@ -1,11 +1,13 @@
 package com.example.model;
 
 import com.example.searchService.Search;
+import javax.persistence.Entity;
 
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+@Entity
 public class Actor extends Person {
     private List<Movie> filmography;
     private List<Award> awards;
@@ -14,6 +16,10 @@ public class Actor extends Person {
         super(firstName, lastName, dateOfBirth, nationality, biography, profileImage);
         this.filmography = filmography;
         this.awards = awards;
+    }
+
+    public Actor() {
+
     }
 
     public List<Movie> getFilmography() {

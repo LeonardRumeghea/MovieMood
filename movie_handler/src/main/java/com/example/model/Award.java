@@ -2,10 +2,17 @@ package com.example.model;
 
 import com.example.model.enums.Genre;
 import com.example.searchService.Search;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 import java.util.Date;
+import java.util.UUID;
 
+@Entity
 public class Award {
+
+    @Id
+    private UUID id;
     private String title;
     private Date date;
     private Genre category;
@@ -16,6 +23,10 @@ public class Award {
         this.date = date;
         this.category = category;
         this.description = description;
+    }
+
+    public Award() {
+
     }
 
     public String getTitle() {
