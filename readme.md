@@ -29,11 +29,11 @@
 
 ## Laboratory 4
 * Design Patterns
-  * Visitor      - [Movie Microservice]() - by Andreea Jinga
-  * Adapter      - [Movie Microservice]() - by Mihai Tomescu
-  * Interpreter  - [Mobile Application]() - by Leonard Rumeghea
+  * Visitor      - [Movie Microservice](https://github.com/LeonardRumeghea/MovieMood/tree/main/movie_handler) - by Andreea Jinga
+  * Adapter      - [Movie Microservice](https://github.com/LeonardRumeghea/MovieMood/tree/main/movie_handler) - by Mihai Tomescu
+  * Interpreter  - [Mobile Application](https://github.com/LeonardRumeghea/MovieMood/tree/main/mobile_app) - by Leonard Rumeghea
   * Proxy        - [Recommendation Microservice](https://github.com/LeonardRumeghea/MovieMood/tree/main/recommendation_system) - by Andrei Popescu
   * Strategy     - [Recommendation Microservice](https://github.com/LeonardRumeghea/MovieMood/tree/main/recommendation_system) - by Andrei Popescu
-  * Observer     - [Recommendation Microservice]() - by Andreea Jinga
-  * Builder      - [Review Microservice]()         - by Leonard Rumeghea
-  * Adapter      - [API Gateway]()                 - by Mihai Tomescu
+  * Observer     - [Recommendation Microservice](https://github.com/LeonardRumeghea/MovieMood/tree/main/recommendation_system) - by Andreea Jinga
+  * Builder      - [Review Microservice](https://github.com/LeonardRumeghea/MovieMood/tree/main/review_handler)          - by Leonard Rumeghea
+  * Adapter      - [API Gateway](https://github.com/LeonardRumeghea/MovieMood/tree/main/api_gateway)                 - by Mihai Tomescu
