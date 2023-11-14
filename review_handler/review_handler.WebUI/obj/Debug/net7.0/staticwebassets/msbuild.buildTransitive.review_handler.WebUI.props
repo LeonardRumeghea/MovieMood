@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\review_handler.WebUI.props" />
+</Project>
