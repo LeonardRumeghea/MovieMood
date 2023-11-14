@@ -35,4 +35,20 @@ public class ActorService {
     public List<Actor> findAllActors() {
         return actorRepository.findAll();
     }
+
+    public void deleteActor(UUID actorId) {
+        Actor actor = actorRepository.findById(actorId);
+        actorRepository.delete(actor);
+    }
+
+    public void updateActor(UUID actorId, String firstName, String lastName) {
+        Actor actor = actorRepository.findById(actorId);
+        if (firstName != null) {
+            actor.setFirstName(firstName);
+        }
+        if (lastName != null) {
+            actor.setLastName(lastName);
+        }
+        actorRepository.save(actor);
+    }
 }

@@ -34,4 +34,20 @@ public class DirectorService {
     public List<Director> findAllDirectors() {
         return directorRepository.findAll();
     }
+
+    public void delete(UUID directorId) {
+        Director director = directorRepository.findById(directorId);
+        directorRepository.delete(director);
+    }
+
+    public void updateDirector(UUID directorId, String firstName, String lastName) {
+        Director director = directorRepository.findById(directorId);
+        if (firstName != null) {
+            director.setFirstName(firstName);
+        }
+        if (lastName != null) {
+            director.setLastName(lastName);
+        }
+        directorRepository.save(director);
+    }
 }
