@@ -1,6 +1,7 @@
 package com.example.repository;
 
 import com.example.model.Director;
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -9,6 +10,7 @@ import javax.persistence.TypedQuery;
 import java.util.List;
 import java.util.UUID;
 
+@Repository
 public class DirectorRepository {
     private EntityManagerFactory entityManagerFactory;
 

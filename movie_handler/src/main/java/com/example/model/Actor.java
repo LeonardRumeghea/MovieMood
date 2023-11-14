@@ -1,7 +1,7 @@
 package com.example.model;
 
 import com.example.searchService.Search;
-import jakarta.persistence.Entity;
+import javax.persistence.Entity;
 
 import java.util.Date;
 import java.util.List;
