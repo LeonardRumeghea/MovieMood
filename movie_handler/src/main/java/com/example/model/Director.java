@@ -2,11 +2,13 @@ package com.example.model;
 
 import com.example.model.enums.Genre;
 import com.example.searchService.Search;
+import jakarta.persistence.Entity;
 
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+@Entity
 public class Director extends Person {
     private List<Movie> filmography;
     private List<Genre> style;
@@ -15,6 +17,10 @@ public class Director extends Person {
         super(firstName, lastName, dateOfBirth, nationality, biography, profileImage);
         this.filmography = filmography;
         this.style = style;
+    }
+
+    public Director() {
+
     }
 
     public List<Movie> getFilmography() {

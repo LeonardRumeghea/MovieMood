@@ -1,17 +1,24 @@
 package com.example.model;
 
 import com.example.searchService.Search;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.MappedSuperclass;
 
 import java.util.Date;
 import java.util.UUID;
 
+@MappedSuperclass
+@Entity
 public abstract class Person {
+    @Id
+    private UUID profileImage;
+
     private String firstName;
     private String lastName;
     private String nationality;
     private Date dateOfBirth;
     private String biography;
-    private UUID profileImage;
 
     public Person(String firstName, String lastName, Date dateOfBirth, String nationality, String biography, UUID profileImage) {
         this.firstName = firstName;
@@ -21,7 +28,13 @@ public abstract class Person {
         this.biography = biography;
         this.profileImage = profileImage;
     }
+
+    public Person() {
+
+    }
+
     public abstract void accept(Search searchObject);
+
     public String getFirstName() {
         return firstName;
     }
