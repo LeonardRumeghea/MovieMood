@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class Person(ABC):
+class User(ABC):
     def __init__(self, id: int, user_name: str, password: str, email: str):
         self.__id = id
         self.__user_name = user_name
