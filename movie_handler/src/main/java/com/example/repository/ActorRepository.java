@@ -78,4 +78,19 @@ public class ActorRepository {
             entityManager.close();
         }
     }
+
+    public void delete(Actor actor) {
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        entityManager.getTransaction().begin();
+
+        try {
+            entityManager.remove(actor);
+            entityManager.getTransaction().commit();
+        } catch (Exception e) {
+            entityManager.getTransaction().rollback();
+            e.printStackTrace();
+        } finally {
+            entityManager.close();
+        }
+    }
 }

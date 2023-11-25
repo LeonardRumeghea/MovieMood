@@ -77,4 +77,19 @@ public class DirectorRepository {
             entityManager.close();
         }
     }
+
+    public void delete(Director director) {
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        entityManager.getTransaction().begin();
+
+        try {
+            entityManager.remove(director);
+            entityManager.getTransaction().commit();
+        } catch (Exception e) {
+            entityManager.getTransaction().rollback();
+            e.printStackTrace();
+        } finally {
+            entityManager.close();
+        }
+    }
 }

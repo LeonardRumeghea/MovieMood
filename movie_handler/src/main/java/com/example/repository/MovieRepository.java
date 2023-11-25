@@ -8,6 +8,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 import java.util.List;
+import java.util.UUID;
 
 @Repository
 public class MovieRepository {
@@ -33,7 +34,7 @@ public class MovieRepository {
         }
     }
 
-    public Movie findById(Long id) {
+    public Movie findById(UUID id) {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
         try {
@@ -61,6 +62,21 @@ public class MovieRepository {
         try {
             TypedQuery<Movie> query = entityManager.createQuery("SELECT m FROM Movie m", Movie.class);
             return query.getResultList();
+        } finally {
+            entityManager.close();
+        }
+    }
+
+    public void delete(Movie movie) {
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        entityManager.getTransaction().begin();
+
+        try {
+            entityManager.remove(movie);
+            entityManager.getTransaction().commit();
+        } catch (Exception e) {
+            entityManager.getTransaction().rollback();
+            e.printStackTrace();
         } finally {
             entityManager.close();
         }

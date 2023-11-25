@@ -37,3 +37,18 @@
   * Observer     - [Recommendation Microservice](https://github.com/LeonardRumeghea/MovieMood/tree/main/recommendation_system) - by Andreea Jinga
   * Builder      - [Review Microservice](https://github.com/LeonardRumeghea/MovieMood/tree/main/review_handler)          - by Leonard Rumeghea
   * Adapter      - [API Gateway](https://github.com/LeonardRumeghea/MovieMood/tree/main/api_gateway)                 - by Mihai Tomescu
+ 
+## Laboratory 5
+* Business Diagram
+  * [Recommendation & Review Features](https://drive.google.com/file/d/1YYP6lvARbh2TbSehlNqoMMyF77bsyARn/view?usp=drive_link) - by Andreea Jinga & Mihai Tomescu
+  * [Poster Recognition & Watch Party Features](https://drive.google.com/file/d/1kU7ZQLrujGd_4B90l5eIFaduswOUCNck/view?usp=drive_link) - by Leonard Rumeghea & Andrei Popescu
+* Model-Driven-Development
+  * [Movie Microservice](https://github.com/LeonardRumeghea/MovieMood/tree/main/movie_handler)
+    * [iteration 1](https://drive.google.com/drive/folders/1iNtRgh3B-g1xlkTECH9fypsuJG5NGyDh?usp=drive_link)
+    * [iteration 2](https://drive.google.com/drive/folders/1jl535EY2-GQ-3XzM7pbvZnlmjvbsHBu2?usp=drive_link)
+  * [Recommendation Microservice](https://github.com/LeonardRumeghea/MovieMood/tree/main/recommendation_system)
+    * [iteration 1](https://drive.google.com/drive/folders/1vzGA3lbTKCup4WG03uSlZJ2FXy0kQGNY?usp=drive_link)
+    * [iteration 2](https://drive.google.com/drive/folders/1DIRNKMKN8LUA5VvXZrkX__TXFVZ-wY6o?usp=drive_link)
+  * [Review Microservice](https://github.com/LeonardRumeghea/MovieMood/tree/main/review_handler)
+    * [iteration 1]()
+    * [iteration 2]()

@@ -1,4 +1,4 @@
-package com.example.service;
+package com.example.service.rabbitmq;
 
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.amqp.core.*;
