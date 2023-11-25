@@ -3,7 +3,7 @@
 abstract class Person {
   final String firstName;
   final String lastName;
-  final DateTime dateOfBirth;
+  final String dateOfBirth;
   final String biography;
   final String nationality;
   // final Image profilePicture;
@@ -14,7 +14,7 @@ abstract class Person {
 
   String getFirstName() => firstName;
   String getLastName() => lastName;
-  DateTime getDateOfBirth() => dateOfBirth;
+  String getDateOfBirth() => dateOfBirth;
   String getBiography() => biography;
   String getNationality() => nationality;
 }
