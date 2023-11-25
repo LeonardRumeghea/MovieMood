@@ -25,7 +25,10 @@ class _PosterDetectorState extends State<PosterDetector> {
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
     return Scaffold(
-        appBar: AppBar(title: const Text('Poster Detection')),
+        appBar: AppBar(
+          title: const Text('Poster Detection'),
+          backgroundColor: accentColor,
+        ),
         floatingActionButton: FloatingActionButton(
           onPressed: showOptions,
           backgroundColor: accentColor,

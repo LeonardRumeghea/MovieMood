@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:mobile_app/core/Entities/director.dart';
 import 'package:mobile_app/core/Entities/genre.dart';
 import 'package:mobile_app/core/Entities/movie.dart';
+import 'package:mobile_app/core/constants.dart';
 import 'package:mobile_app/screens/movie_view.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -20,7 +21,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Welcome back, John Doe'),
+        title: const Text('Welcome back, John Doe!'),
+        backgroundColor: accentColor,
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(
@@ -49,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
     List<Widget> listItems = [];
     Movie movie = Movie(
       title: 'Barbie',
-      releaseDate: '9 July 2023',
+      releaseDate: DateTime.parse("2023-07-23"),
       description:
           'A doll living in Barbieland is expelled for not being perfect enough and sets off on an adventure in the real world. A Live-action feature film based on the popular line of Barbie toys.',
       director: Director(

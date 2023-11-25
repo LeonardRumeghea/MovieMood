@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mobile_app/core/constants.dart';
 import 'package:mobile_app/screens/home_screen.dart';
 import 'package:mobile_app/screens/poster_detector.dart';
+import 'package:mobile_app/screens/profile_screen.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -9,9 +10,8 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark(),
-      home: const Navigation(),
-    );
+        theme: ThemeData.dark().copyWith(primaryColor: accentColor),
+        home: const Navigation());
   }
 }
 
@@ -27,29 +27,25 @@ class _NavigationState extends State<Navigation> {
 
   @override
   Widget build(BuildContext context) {
-    final ThemeData theme = Theme.of(context);
     return Scaffold(
       bottomNavigationBar: NavigationBar(
-        onDestinationSelected: (int index) {
-          setState(() {
-            currentPageIndex = index;
-          });
-        },
+        onDestinationSelected: (int index) =>
+            setState(() => currentPageIndex = index),
         indicatorColor: accentColor,
         selectedIndex: currentPageIndex,
         destinations: const <Widget>[
           NavigationDestination(
-            selectedIcon: Icon(Icons.home),
+            selectedIcon: Icon(Icons.home, size: 30),
             icon: Icon(Icons.home_outlined),
             label: 'Home',
           ),
           NavigationDestination(
-            selectedIcon: Icon(Icons.camera_alt_rounded),
+            selectedIcon: Icon(Icons.camera_alt_rounded, size: 30),
             icon: Icon(Icons.camera_alt_outlined),
             label: 'Poster detection',
           ),
           NavigationDestination(
-            selectedIcon: Icon(Icons.person),
+            selectedIcon: Icon(Icons.person, size: 30),
             icon: Icon(Icons.person_outline),
             label: 'Profile',
           ),
@@ -58,20 +54,7 @@ class _NavigationState extends State<Navigation> {
       body: <Widget>[
         const HomeScreen(),
         const PosterDetector(),
-
-        /// Messages page
-        Card(
-          margin: const EdgeInsets.all(0.0),
-          shadowColor: Colors.transparent,
-          child: SizedBox.expand(
-            child: Center(
-              child: Text(
-                'User Profile page',
-                style: theme.textTheme.titleLarge,
-              ),
-            ),
-          ),
-        ),
+        const ProfileScreen(),
       ][currentPageIndex],
     );
   }

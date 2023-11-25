@@ -4,7 +4,7 @@ import 'package:mobile_app/core/Entities/genre.dart';
 
 class Movie {
   final String title;
-  final String releaseDate;
+  final DateTime releaseDate;
   final String description;
   final Director director;
   final List<Actor> cast;
@@ -25,7 +25,7 @@ class Movie {
     Iterable g = json['genres'].decode(json['genres']);
     return Movie(
         title: json['title'],
-        releaseDate: json['releaseDate'],
+        releaseDate: DateTime.parse(json['releaseDate']),
         description: json['description'],
         director: Director.fromJSON(json['director']),
         cast: List<Actor>.from(a.map((actor) => Actor.fromJson(actor))),
@@ -35,7 +35,7 @@ class Movie {
 
   Map<String, dynamic> toJson() => {
         'title': title,
-        'releaseDate': releaseDate,
+        'releaseDate': releaseDate.toString(),
         'description': description,
         'director': director.toJson(),
         'actors': cast.map((a) => a.toJson()).toList(),

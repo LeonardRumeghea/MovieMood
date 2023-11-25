@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app/core/Entities/genre.dart';
 import 'package:mobile_app/core/Entities/movie.dart';
+import 'package:mobile_app/core/Entities/review.dart';
+import 'package:mobile_app/core/constants.dart';
+import 'package:mobile_app/screens/rating_dialog.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:intl/intl.dart';
 
 class MovieView extends StatefulWidget {
   final Movie movie;
@@ -12,6 +16,8 @@ class MovieView extends StatefulWidget {
 }
 
 bool isFavorite = false;
+String movieUrl = "https://www.imdb.com/title/tt1517268/";
+Review? yourReview;
 
 class _MovieViewState extends State<MovieView> {
   @override
@@ -25,124 +31,239 @@ class _MovieViewState extends State<MovieView> {
     );
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.movie.title),
-      ),
-      body: Stack(
+        appBar: AppBar(
+          title: const Text("Movie Details"),
+          backgroundColor: accentColor,
+        ),
+        body: _getInfoPanel(screenSize, image, movieUrl));
+  }
+
+  _getInfoPanel(Size screenSize, Image image, String url) {
+    return SingleChildScrollView(
+      child: Column(
         children: [
-          Positioned(
-            top: screenSize.width * 0.1,
-            left: screenSize.width * 0.1,
-            child: Container(
-              height: screenSize.height * 0.4,
-              width: screenSize.width * 0.8,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                boxShadow: const [
-                  BoxShadow(
-                      color: Colors.black26, blurRadius: 10, spreadRadius: 10),
-                ],
-                image: DecorationImage(
-                  image: image.image,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          ),
-          Positioned(
-            top: screenSize.height * 0.39,
-            left: screenSize.width * 0.78,
-            child: IconButton(
-              onPressed: () {
-                setState(() {
-                  isFavorite = !isFavorite;
-                });
-              },
-              icon: isFavorite
-                  ? const Icon(Icons.favorite, color: Colors.red)
-                  : const Icon(Icons.favorite_border, color: Colors.white),
-              color: Colors.white,
-              iconSize: 32,
-            ),
-          ),
-          Positioned(
-            top: screenSize.height * 0.39,
-            left: screenSize.width * 0.11,
-            child: IconButton(
-              onPressed: () {
-                _launchMovie("https://www.imdb.com/title/tt1517268/");
-              },
-              icon: const Icon(Icons.play_circle_fill, color: Colors.white),
-              color: Colors.white,
-              iconSize: 32,
-            ),
-          ),
-          Positioned(
-              top: screenSize.height * 0.475,
-              left: screenSize.width * 0.025,
-              child: _getInfoPanel(screenSize)),
+          _getMoviePoster(screenSize, image),
+          _getButtons(screenSize, url),
+          _getMovieInfoPanel(screenSize),
         ],
       ),
     );
   }
 
-  _getInfoPanel(Size screenSize) {
-    return Container(
-        width: screenSize.width * 0.95,
-        padding: const EdgeInsets.all(20),
+  _getMoviePoster(Size screenSize, Image image) {
+    return Padding(
+      padding: EdgeInsets.only(
+        top: screenSize.height * 0.05,
+        left: screenSize.width * 0.1,
+        right: screenSize.width * 0.1,
+      ),
+      child: Container(
+        height: screenSize.height * 0.6,
+        width: screenSize.width * 0.8,
         decoration: BoxDecoration(
-          color: Colors.grey.shade800,
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(10),
+          boxShadow: const [
+            BoxShadow(color: Colors.black26, blurRadius: 10, spreadRadius: 10),
+          ],
+          image: DecorationImage(image: image.image, fit: BoxFit.cover),
         ),
-        child: _getMovieInfos(screenSize));
+      ),
+    );
   }
 
-  _getMoviePoster(Size screenSize) {}
+  _getFavoriteButton(Size screenSize) {
+    return IconButton(
+      onPressed: () {
+        setState(() {
+          isFavorite = !isFavorite;
+        });
+      },
+      icon: isFavorite
+          ? const Icon(Icons.favorite, color: Colors.red)
+          : const Icon(Icons.favorite_border, color: Colors.white),
+      color: Colors.white,
+      iconSize: 32,
+    );
+  }
+
+  _getPlayButton(Size screenSize, String url) {
+    return IconButton(
+      onPressed: () {
+        _launchMovie("url");
+      },
+      icon: const Icon(Icons.play_circle_fill, color: Colors.white),
+      color: Colors.white,
+      iconSize: 32,
+    );
+  }
+
+  _getAddToListButton(Size screenSize) {
+    return IconButton(
+      onPressed: () {},
+      icon: const Icon(Icons.add, color: Colors.white),
+      color: Colors.white,
+      iconSize: 32,
+    );
+  }
+
+  _getButtons(Size screenSize, String movieUrl) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: screenSize.width * 0.1),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          _getPlayButton(screenSize, movieUrl),
+          Row(
+            children: [
+              _getAddToListButton(screenSize),
+              _getFavoriteButton(screenSize),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  _getMovieInfoPanel(Size screenSize) {
+    return Padding(
+      padding: EdgeInsets.symmetric(
+        horizontal: screenSize.width * 0.05,
+        vertical: screenSize.height * 0.025,
+      ),
+      child: SizedBox(
+        // height: screenSize.height * 0.8,
+        width: screenSize.width * 0.9,
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: const [
+              BoxShadow(
+                  color: Colors.black26, blurRadius: 10, spreadRadius: 10),
+            ],
+            color: Colors.grey.shade800,
+          ),
+          child: _getMovieInfos(screenSize),
+        ),
+      ),
+    );
+  }
 
   _getMovieInfos(Size screenSize) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          widget.movie.title,
-          style: const TextStyle(
-            fontSize: 32,
-            fontWeight: FontWeight.bold,
-            fontFamily: 'Roboto',
+    return Padding(
+      padding: EdgeInsets.all(screenSize.width * 0.05),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            widget.movie.title,
+            style: const TextStyle(
+              fontSize: 32,
+              fontWeight: FontWeight.bold,
+            ),
           ),
-        ),
-        const Divider(thickness: 1),
-        Text(
-          "Release date: ${widget.movie.releaseDate}",
-          style: const TextStyle(
-            fontSize: 22,
-            fontFamily: 'Roboto',
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  Text(
+                    "${widget.movie.rating}/10",
+                    style: const TextStyle(fontSize: 18),
+                  ),
+                  const Icon(Icons.star, color: Colors.yellow),
+                ],
+              ),
+              Text(
+                DateFormat.yMMMd().format(widget.movie.releaseDate),
+                style: const TextStyle(fontSize: 18),
+              ),
+            ],
           ),
-        ),
-        SizedBox(height: screenSize.height * 0.02),
-        Text(
-          "Director: ${widget.movie.director.firstName} ${widget.movie.director.lastName}",
-          style: const TextStyle(
-            fontSize: 22,
-            fontFamily: 'Roboto',
+          Padding(
+            padding: EdgeInsets.symmetric(vertical: screenSize.height * 0.01),
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(children: _getGenresRow(screenSize)),
+            ),
           ),
-        ),
-        SizedBox(height: screenSize.height * 0.02),
-        Text(
-          "Genres: ${widget.movie.genres.map((e) => genreToString(e)).join(", ")}",
-          style: const TextStyle(
-            fontSize: 22,
-            fontFamily: 'Roboto',
-          ),
-        ),
-      ],
+          Divider(color: Colors.grey.shade600),
+          _getDescription(screenSize),
+          Divider(color: Colors.grey.shade600),
+          _getReviewSection(screenSize),
+        ],
+      ),
     );
+  }
+
+  List<Widget> _getGenresRow(Size screenSize) => widget.movie.genres
+      .map((g) => _getGenreLabel(screenSize, genreToString(g)))
+      .toList();
+
+  Widget _getGenreLabel(Size screenSize, String genre) {
+    return Padding(
+      padding: EdgeInsets.symmetric(
+          horizontal: screenSize.width * 0.01,
+          vertical: screenSize.height * 0.01),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: Colors.grey.shade600,
+          border: Border.all(color: Colors.grey.shade900),
+        ),
+        child: Text(genre, style: const TextStyle(fontSize: 18)),
+      ),
+    );
+  }
+
+  Widget _getDescription(Size screenSize) {
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: screenSize.height * 0.025),
+      child: Text(
+        "     ${widget.movie.description}",
+        style: const TextStyle(fontSize: 20),
+      ),
+    );
+  }
+
+  Widget _getReviewSection(Size screenSize) {
+    return yourReview == null
+        ? _getNoReviewSection(screenSize)
+        : _getReview(screenSize);
+  }
+
+  Widget _getNoReviewSection(Size screenSize) {
+    return Center(
+      child: Padding(
+        padding: EdgeInsets.symmetric(vertical: screenSize.height * 0.025),
+        child: TextButton(
+            onPressed: _showAddReviewDialog,
+            child: Text("Review this movie",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: accentColor,
+                ))),
+      ),
+    );
+  }
+
+  late double rating = 0.0;
+
+  Future _showAddReviewDialog() async {
+    showDialog(context: context, builder: (_) => const RatingDialog());
+  }
+
+  Widget _getReview(Size screenSize) {
+    return const SizedBox();
   }
 
   _launchMovie(String urlString) async {
     final Uri url = Uri.parse(urlString);
     if (!await launchUrl(url)) {
-      throw Exception('Could not launch $url');
+      const AlertDialog(
+        title: Text("Error"),
+        content: Text("Could not launch movie. Please try again later."),
+      );
     }
   }
 }
