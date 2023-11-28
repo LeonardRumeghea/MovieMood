@@ -15,6 +15,55 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
+  final Movie _mockMovie = Movie(
+    title: 'Barbie',
+    releaseDate: DateTime.parse("2023-07-23"),
+    description:
+        'A doll living in Barbieland is expelled for not being perfect enough and sets off on an adventure in the real world. A Live-action feature film based on the popular line of Barbie toys.',
+    director: Director(
+        firstName: "Greta",
+        lastName: "Gerwing",
+        dateOfBirth: "4/08/1983",
+        biography: "",
+        nationality: "",
+        filmography: [],
+        style: []),
+    cast: [],
+    genres: [Genre.comedy, Genre.fantasy],
+    rating: 7.0,
+  );
+
+  final _postersLinks = [
+    "https://image.tmdb.org/t/p/original/u5kboZR4OMi4QdbOhawCZuzMVWJ.jpg",
+    "https://www.washingtonpost.com/graphics/2019/entertainment/oscar-nominees-movie-poster-design/img/black-panther-web.jpg",
+    "https://www.vintagemovieposters.co.uk/wp-content/uploads/2023/03/IMG_1887-scaled.jpeg",
+    "https://m.media-amazon.com/images/I/5161KW51G2L._AC_UF1000,1000_QL80_.jpg",
+    "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6408f6e7b5811271dc883aa8_batman-min.png",
+    "https://m.media-amazon.com/images/I/71eHZFw+GlL._AC_UF894,1000_QL80_.jpg",
+    "https://www.tallengestore.com/cdn/shop/products/Oppenheimer-CillianMurphy-ChristopherNolan-HollywoodMoviePoster_1_0d1586b1-e2a3-48ea-84a0-fd76268635f4.jpg?v=1647424462",
+    "https://s.yimg.com/ny/api/res/1.2/ZzAHlDHi8a2xdBRRbruaYQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTkyOA--/https://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/d05a3f087fa57f6d41b865d53a42a5f5",
+    "https://i.pinimg.com/736x/fe/e7/ea/fee7eab62f787cf7bbd3aa3cce3ac833.jpg",
+    "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6408f76710a9935109f855d4_smile-min.png",
+  ];
+
+  final List<String> _listsName = [
+    'Recently added',
+    'Popular now',
+    'Recommended for you'
+  ];
+
+  late TextEditingController _listNameController;
+
+  @override
+  void initState() {
+    super.initState();
+    _initData();
+  }
+
+  _initData() {
+    _listNameController = TextEditingController();
+  }
+
   @override
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
@@ -42,9 +91,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
     pageContent.add(_getAppBar(screenSize));
 
-    pageContent.add(_buildList(screenSize, 'Favorites', false));
-    pageContent.add(_buildList(screenSize, 'Watch later', true));
-    pageContent.add(_buildList(screenSize, 'Watched', false));
+    for (var element in _listsName) {
+      pageContent.add(_buildList(screenSize, element, Random().nextBool()));
+    }
 
     pageContent.add(_getAddListButton(screenSize));
 
@@ -100,69 +149,38 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   Column _buildList(Size screenSize, String label, bool empty) {
-    List<Widget> listItems = [];
-    Movie movie = Movie(
-      title: 'Barbie',
-      releaseDate: DateTime.parse("2023-07-23"),
-      description:
-          'A doll living in Barbieland is expelled for not being perfect enough and sets off on an adventure in the real world. A Live-action feature film based on the popular line of Barbie toys.',
-      director: Director(
-          firstName: "Greta",
-          lastName: "Gerwing",
-          dateOfBirth: "4/08/1983",
-          biography: "",
-          nationality: "",
-          filmography: [],
-          style: []),
-      cast: [],
-      genres: [Genre.comedy, Genre.fantasy],
-      rating: 7.0,
-    );
-    var links = [
-      "https://image.tmdb.org/t/p/original/u5kboZR4OMi4QdbOhawCZuzMVWJ.jpg",
-      "https://www.washingtonpost.com/graphics/2019/entertainment/oscar-nominees-movie-poster-design/img/black-panther-web.jpg",
-      "https://www.vintagemovieposters.co.uk/wp-content/uploads/2023/03/IMG_1887-scaled.jpeg",
-      "https://m.media-amazon.com/images/I/5161KW51G2L._AC_UF1000,1000_QL80_.jpg",
-      "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6408f6e7b5811271dc883aa8_batman-min.png",
-      "https://m.media-amazon.com/images/I/71eHZFw+GlL._AC_UF894,1000_QL80_.jpg",
-      "https://www.tallengestore.com/cdn/shop/products/Oppenheimer-CillianMurphy-ChristopherNolan-HollywoodMoviePoster_1_0d1586b1-e2a3-48ea-84a0-fd76268635f4.jpg?v=1647424462",
-      "https://s.yimg.com/ny/api/res/1.2/ZzAHlDHi8a2xdBRRbruaYQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTkyOA--/https://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/d05a3f087fa57f6d41b865d53a42a5f5",
-      "https://i.pinimg.com/736x/fe/e7/ea/fee7eab62f787cf7bbd3aa3cce3ac833.jpg",
-      "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6408f76710a9935109f855d4_smile-min.png",
-    ];
-    for (int i = 0; i < 10; i++) {
-      var imgIndex = Random().nextInt(links.length);
-      Image image = Image.network(links[imgIndex],
-          height: screenSize.height * 0.4, width: screenSize.width * 0.8);
-      listItems.add(_buildCard(screenSize, movie, image));
-      links.removeAt(imgIndex);
-    }
-
-    if (empty) listItems = [];
+    _postersLinks.shuffle();
+    List<Widget> listItems = empty
+        ? []
+        : _postersLinks
+            .take(Random().nextInt(_postersLinks.length))
+            .map((e) => _buildCard(screenSize, _mockMovie, Image.network(e)))
+            .toList();
 
     return Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: screenSize.height * .025),
-            child: Text(
-              label,
-              style: const TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: EdgeInsets.symmetric(vertical: screenSize.height * .025),
+          child: Text(
+            label,
+            style: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
             ),
           ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: listItems,
-            ),
+        ),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: listItems,
           ),
-          const Divider(thickness: 1),
-        ]);
+        ),
+        const Divider(thickness: 1),
+      ],
+    );
   }
 
   Widget _buildCard(Size screenSize, Movie movie, Image image) {
@@ -176,10 +194,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           BoxShadow(
               color: Colors.grey.shade900, blurRadius: 2, spreadRadius: 2),
         ],
-        image: DecorationImage(
-          image: image.image,
-          fit: BoxFit.cover,
-        ),
+        image: DecorationImage(image: image.image, fit: BoxFit.cover),
       ),
       child: GestureDetector(
         onTap: () {
@@ -235,6 +250,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           title: const Text('Add new list'),
           content: SizedBox(
             child: TextField(
+              controller: _listNameController,
               decoration: InputDecoration(
                 labelText: 'Name',
                 border: const OutlineInputBorder(),
@@ -252,7 +268,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
             ),
             TextButton(
-              onPressed: () => Navigator.pop(context),
+              onPressed: () {
+                setState(() => _listsName.add(_listNameController.text));
+                Navigator.pop(context);
+                _listNameController.clear();
+              },
               child: Text('Submit',
                   style: TextStyle(color: accentColor, fontSize: 18)),
             ),
