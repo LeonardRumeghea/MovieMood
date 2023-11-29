@@ -257,13 +257,18 @@ class _MovieViewState extends State<MovieView> {
     return const SizedBox();
   }
 
-  _launchMovie(String urlString) async {
+  Future<void> _launchMovie(String urlString) async {
     final Uri url = Uri.parse(urlString);
-    if (!await launchUrl(url)) {
-      const AlertDialog(
-        title: Text("Error"),
-        content: Text("Could not launch movie. Please try again later."),
-      );
+    if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
+      throw Exception('Could not launch $url');
+      // ignore: use_build_context_synchronously
+      // showDialog(
+      //   context: context,
+      //   builder: (context) => const AlertDialog(
+      //     title: Text("Error"),
+      //     content: Text("Could not launch movie. Please try again later."),
+      //   ),
+      // );
     }
   }
 }

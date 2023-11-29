@@ -12,14 +12,9 @@ class PosterDetector extends StatefulWidget {
 }
 
 class _PosterDetectorState extends State<PosterDetector> {
-  late File _image;
+  late File _loadedImage;
   bool _isImageLoaded = false;
-  final picker = ImagePicker();
-
-  @override
-  void initState() {
-    super.initState();
-  }
+  final _picker = ImagePicker();
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +25,7 @@ class _PosterDetectorState extends State<PosterDetector> {
           backgroundColor: accentColor,
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: showOptions,
+          onPressed: _showOptions,
           backgroundColor: accentColor,
           child: const Icon(Icons.add_a_photo, color: Colors.white),
         ),
@@ -44,13 +39,14 @@ class _PosterDetectorState extends State<PosterDetector> {
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: const [
                         BoxShadow(
-                            color: Colors.black26,
-                            blurRadius: 10,
-                            spreadRadius: 10),
+                          color: Colors.black26,
+                          blurRadius: 10,
+                          spreadRadius: 10,
+                        )
                       ],
                       image: DecorationImage(
                         image: Image.file(
-                          _image,
+                          _loadedImage,
                           height: screenSize.height * 0.5,
                           width: screenSize.width * 0.7,
                         ).image,
@@ -64,28 +60,18 @@ class _PosterDetectorState extends State<PosterDetector> {
         ));
   }
 
-  Future getImageFromGallery() async {
-    final pickedFile = await picker.pickImage(source: ImageSource.gallery);
-    setState(() {
-      if (pickedFile != null) {
-        _image = File(pickedFile.path);
+  Future _getImage(ImageSource source) async {
+    final pickedFile = await _picker.pickImage(source: source);
+
+    if (pickedFile != null) {
+      setState(() {
+        _loadedImage = File(pickedFile.path);
         _isImageLoaded = true;
-      }
-    });
+      });
+    }
   }
 
-  Future getImageFromCamera() async {
-    final pickedFile = await picker.pickImage(source: ImageSource.camera);
-
-    setState(() {
-      if (pickedFile != null) {
-        _image = File(pickedFile.path);
-        _isImageLoaded = true;
-      }
-    });
-  }
-
-  Future showOptions() async {
+  Future _showOptions() async {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -96,23 +82,26 @@ class _PosterDetectorState extends State<PosterDetector> {
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            // insert horizontal line
             const Divider(thickness: 1),
             TextButton(
               onPressed: () {
                 Navigator.of(context).pop();
-                getImageFromGallery();
+                _getImage(ImageSource.gallery);
               },
-              child: const Text('Chose from Library',
-                  style: TextStyle(fontSize: 20, fontFamily: 'Roboto')),
+              child: const Text(
+                'Chose from Library',
+                style: TextStyle(fontSize: 20, fontFamily: 'Roboto'),
+              ),
             ),
             TextButton(
               onPressed: () {
                 Navigator.of(context).pop();
-                getImageFromCamera();
+                _getImage(ImageSource.camera);
               },
-              child: const Text('Take image',
-                  style: TextStyle(fontSize: 20, fontFamily: 'Roboto')),
+              child: const Text(
+                'Take image',
+                style: TextStyle(fontSize: 20, fontFamily: 'Roboto'),
+              ),
             ),
           ],
         ),

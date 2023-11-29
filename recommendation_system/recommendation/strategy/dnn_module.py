@@ -1,15 +1,12 @@
 from recommendation import recommendation_mlp
 from recommendation.pipeline import Pipeline
-from recommendation.recommendation_mlp import RecommendationMLP
-from recommendation_strategy import RecommendationStrategy
+from recommendation.strategy.recommendation_strategy import RecommendationStrategy
 
 
 class DNNModule(RecommendationStrategy):
-    def __init__(self, model: RecommendationMLP, movies: list):
-        self._model = model
-        self._configurations = self.create_configuration(75, 10, 50, 10, 30, 20, 0.007, 0.86, 0.0, "SGD")
-        self._pipeline = Pipeline(self._model, self._configurations)
-        self._movies = movies
+    def __init__(self):
+        self._configurations = self.create_configuration(75, 10, 50, 20, 30, 20, 0.01, 0.86, 0.0, "SGD")
+        self._pipeline = Pipeline(self._configurations)
 
     def create_configuration(self, epochs: int, classes: int, batch_size_test: int, input_dim: int,
                              hidden_layer1_dim: int, hidden_layer2_dim: int,
@@ -31,16 +28,16 @@ class DNNModule(RecommendationStrategy):
         self._pipeline.start()
 
     def create_recommendation(self):
-        pass
+        self.start_pipeline()
 
-    def set_movies(self, movies: list):
-        self._movies = movies
-
-    def get_movies(self):
-        return self._movies
-
-    def set_model(self, model: recommendation_mlp):
-        self._model = model
-
-    def get_model(self):
-        return self._model
+    # def set_movies(self, movies: list):
+    #     self._movies = movies
+    #
+    # def get_movies(self):
+    #     return self._movies
+    #
+    # def set_model(self, model: recommendation_mlp):
+    #     self._model = model
+    #
+    # def get_model(self):
+    #     return self._model

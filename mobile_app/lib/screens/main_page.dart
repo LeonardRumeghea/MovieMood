@@ -23,16 +23,27 @@ class Navigation extends StatefulWidget {
 }
 
 class _NavigationState extends State<Navigation> {
-  int currentPageIndex = 0;
+  late int _currentPageIndex;
+
+  @override
+  void initState() {
+    super.initState();
+    _initData();
+  }
+
+  _initData() {
+    _currentPageIndex = 0;
+    // TODO: fetch data from APIs recommended/popular movies movies user informations and lists
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: NavigationBar(
         onDestinationSelected: (int index) =>
-            setState(() => currentPageIndex = index),
+            setState(() => _currentPageIndex = index),
         indicatorColor: accentColor,
-        selectedIndex: currentPageIndex,
+        selectedIndex: _currentPageIndex,
         destinations: const <Widget>[
           NavigationDestination(
             selectedIcon: Icon(Icons.home, size: 30),
@@ -55,7 +66,7 @@ class _NavigationState extends State<Navigation> {
         const HomeScreen(),
         const PosterDetector(),
         const ProfileScreen(),
-      ][currentPageIndex],
+      ][_currentPageIndex],
     );
   }
 }
