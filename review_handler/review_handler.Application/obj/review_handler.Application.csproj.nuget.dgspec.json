@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Application\\review_handler.Application.csproj": {}
+    "D:\\Facultate\\ASET\\MovieMood\\review_handler\\review_handler.Application\\review_handler.Application.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Application\\review_handler.Application.csproj": {
+    "D:\\Facultate\\ASET\\MovieMood\\review_handler\\review_handler.Application\\review_handler.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Application\\review_handler.Application.csproj",
+        "projectUniqueName": "D:\\Facultate\\ASET\\MovieMood\\review_handler\\review_handler.Application\\review_handler.Application.csproj",
         "projectName": "review_handler.Application",
-        "projectPath": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Application\\review_handler.Application.csproj",
-        "packagesPath": "C:\\Users\\Leonard\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Application\\obj\\",
+        "projectPath": "D:\\Facultate\\ASET\\MovieMood\\review_handler\\review_handler.Application\\review_handler.Application.csproj",
+        "packagesPath": "C:\\Users\\Andreea\\.nuget\\packages\\",
+        "outputPath": "D:\\Facultate\\ASET\\MovieMood\\review_handler\\review_handler.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Leonard\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Andreea\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj": {
-                "projectPath": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj"
+              "D:\\Facultate\\ASET\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj": {
+                "projectPath": "D:\\Facultate\\ASET\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj"
               }
             }
           }
@@ -96,30 +92,40 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj": {
+    "D:\\Facultate\\ASET\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj",
+        "projectUniqueName": "D:\\Facultate\\ASET\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj",
         "projectName": "review_handler.Core",
-        "projectPath": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj",
-        "packagesPath": "C:\\Users\\Leonard\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Core\\obj\\",
+        "projectPath": "D:\\Facultate\\ASET\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj",
+        "packagesPath": "C:\\Users\\Andreea\\.nuget\\packages\\",
+        "outputPath": "D:\\Facultate\\ASET\\MovieMood\\review_handler\\review_handler.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Leonard\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Andreea\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -155,12 +161,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -55,4 +55,13 @@ public class Award extends AbstractEntity<UUID>{
         this.description = description;
     }
 
+    @Override
+    public String toString() {
+        return "Award{" +
+                "title='" + title + '\'' +
+                ", date=" + date +
+                ", category=" + category +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

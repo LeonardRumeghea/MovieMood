@@ -40,4 +40,11 @@ public class Director extends Person {
         this.style = style;
     }
 
+    @Override
+    public String toString() {
+        return "Director{" +
+                "filmography=" + filmography +
+                ", style=" + style +
+                '}';
+    }
 }

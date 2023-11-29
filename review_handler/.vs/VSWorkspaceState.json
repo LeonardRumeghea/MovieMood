@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\review_handler.Application",
+    "\\review_handler.Application\\Commands",
+    "\\review_handler.Application\\Mappers",
+    "\\review_handler.Application\\Queries",
+    "\\review_handler.Core\\Entities",
+    "\\review_handler.Core\\Helpers"
+  ],
+  "SelectedNode": "\\review_handler.Application\\Handlers",
+  "PreviewInSolutionExplorer": false
+}
