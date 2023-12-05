@@ -42,4 +42,11 @@ public class Actor extends Person {
         this.awards = awards;
     }
 
+    @Override
+    public String toString() {
+        return "Actor{" +
+                "filmography=" + filmography +
+                ", awards=" + awards +
+                '}';
+    }
 }

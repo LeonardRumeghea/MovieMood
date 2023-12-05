@@ -81,4 +81,16 @@ public class Movie extends AbstractEntity<UUID> {
     public void setRating(double rating) {
         this.rating = rating;
     }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "title='" + title + '\'' +
+                ", year=" + year +
+                ", cast=" + cast +
+                ", genre=" + genre +
+                ", director=" + director +
+                ", rating=" + rating +
+                '}';
+    }
 }

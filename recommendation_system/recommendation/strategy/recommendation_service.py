@@ -1,4 +1,4 @@
-from recommendation_strategy import RecommendationStrategy
+from recommendation.strategy.recommendation_strategy import RecommendationStrategy
 
 
 class RecommendationService:
