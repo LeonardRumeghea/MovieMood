@@ -11,5 +11,7 @@
             this.Filmography = filmography;
             this.Awards = awards;
         }
+
+        public Actor() { }
     }
 }
