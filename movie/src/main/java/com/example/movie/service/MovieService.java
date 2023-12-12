@@ -15,6 +15,8 @@ import java.util.stream.Collectors;
 public class MovieService {
     @Inject
     private GenreMonitor genreMonitor;
+
+    @Inject
     private MovieRepository movieRepository;
     public void createMovie(Movie movie) {
         genreMonitor.verifyCreatedMovie(movie);

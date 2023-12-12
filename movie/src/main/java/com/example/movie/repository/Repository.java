@@ -1,5 +1,6 @@
 package com.example.movie.repository;
 
+import com.example.movie.aspect.MyAspect;
 import com.example.movie.model.AbstractEntity;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
@@ -16,10 +17,12 @@ public abstract class Repository<T extends AbstractEntity<ID>, ID extends Serial
         this.entityClass = entityClass;
     }
 
+    @MyAspect
     public void create(T entity) {
         entityManager.persist(entity);
     }
 
+    @MyAspect
     public T findById(ID id) {
         if (id == null) {
             return null;
@@ -27,10 +30,12 @@ public abstract class Repository<T extends AbstractEntity<ID>, ID extends Serial
         return entityManager.find(entityClass, id);
     }
 
+    @MyAspect
     public void update(T entity) {
         entityManager.merge(entity);
     }
 
+    @MyAspect
     public void delete(T entity) {
         if (!entityManager.contains(entity)) {
             entity = entityManager.merge(entity);
@@ -38,6 +43,7 @@ public abstract class Repository<T extends AbstractEntity<ID>, ID extends Serial
         entityManager.remove(entity);
     }
 
+    @MyAspect
     public List<T> findAll() {
         return entityManager.createNamedQuery(entityClass.getSimpleName() + ".findAll", entityClass).getResultList();
     }

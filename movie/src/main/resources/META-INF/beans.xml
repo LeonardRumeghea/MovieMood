@@ -3,5 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd"
        bean-discovery-mode="annotated">
-
+    <interceptors>
+        <class>com.example.movie.aspect.FindAllAspect</class>
+        <class>com.example.movie.aspect.CreateAspect</class>
+        <class>com.example.movie.aspect.DeleteAspect</class>
+        <class>com.example.movie.aspect.ReadAspect</class>
+        <class>com.example.movie.aspect.UpdateAspect</class>
+    </interceptors>
 </beans>

@@ -14,6 +14,7 @@ public abstract class Person extends AbstractEntity<UUID>{
     protected String biography;
 
     public Person(String firstName, String lastName, Date dateOfBirth, String nationality, String biography, UUID profileImage) {
+        this.id = UUID.randomUUID();
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;

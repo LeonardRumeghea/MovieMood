@@ -6,6 +6,12 @@ import java.util.List;
 import java.util.UUID;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "Movie.findAll",
+                query = "select e from Movie e order by e.title"),
+        @NamedQuery(name = "Project.findByTitle",
+                query = "select e from Movie e where e.title like ?1")
+})
 public class Movie extends AbstractEntity<UUID> {
 
     protected String title;
@@ -19,6 +25,7 @@ public class Movie extends AbstractEntity<UUID> {
     protected double rating;
 
     public Movie(String title, int year, List<Actor> cast, List<Genre> genre, Director director, double rating) {
+        this.id = UUID.randomUUID();
         this.title = title;
         this.year = year;
         this.cast = cast;
