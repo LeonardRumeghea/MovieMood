@@ -43,6 +43,14 @@ public class Director extends Person {
         this.style = style;
     }
 
+    public void addStyle(Genre style) {
+        this.style.add(style);
+    }
+
+    public void deleteStyle(Genre style) {
+        this.style.remove(style);
+    }
+
     @Override
     public String toString() {
         return "Director{" +
