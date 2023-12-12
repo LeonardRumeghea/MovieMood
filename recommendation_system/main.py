@@ -14,6 +14,9 @@ if __name__ == '__main__':
     movie_repo = MovieRepository(db)
     genre_repo = GenreRepository(db)
 
+    # rev = ReviewDataset(review_repo, genre_repo, 10)
+    # print(len(rev.dataset))
+
     recommendation_service = RecommendationService(DNNModule())
     recommended_movies_ids = recommendation_service.process_request(user_id=13, review_repo=review_repo, genre_repo=genre_repo, movie_repo=movie_repo)
     print(recommended_movies_ids)
