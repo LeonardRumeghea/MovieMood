@@ -2,14 +2,16 @@ package com.example.movie.repository;
 
 import com.example.movie.model.Actor;
 import com.example.movie.model.Award;
+import jakarta.ejb.Stateless;
 
 import java.util.List;
 import java.util.UUID;
 
+@Stateless
 public class AwardRepository extends Repository<Award, UUID>{
 
-    public AwardRepository(Class<Award> entityClass) {
-        super(entityClass);
+    public AwardRepository() {
+        super(Award.class);
     }
 
     public List<Award> findByTitle(String title) {

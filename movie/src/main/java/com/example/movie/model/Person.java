@@ -6,12 +6,12 @@ import java.util.UUID;
 
 @MappedSuperclass
 public abstract class Person extends AbstractEntity<UUID>{
-    private UUID profileImage;
-    private String firstName;
-    private String lastName;
-    private String nationality;
-    private Date dateOfBirth;
-    private String biography;
+    protected UUID profileImage;
+    protected String firstName;
+    protected String lastName;
+    protected String nationality;
+    protected Date dateOfBirth;
+    protected String biography;
 
     public Person(String firstName, String lastName, Date dateOfBirth, String nationality, String biography, UUID profileImage) {
         this.firstName = firstName;

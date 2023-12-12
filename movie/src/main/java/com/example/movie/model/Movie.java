@@ -1,9 +1,6 @@
 package com.example.movie.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
 
 import java.util.List;
 import java.util.UUID;
@@ -11,15 +8,15 @@ import java.util.UUID;
 @Entity
 public class Movie extends AbstractEntity<UUID> {
 
-    private String title;
-    private int year;
-    @OneToMany
-    private List<Actor> cast;
-    private List<Genre> genre;
+    protected String title;
+    protected int year;
+    @ManyToMany
+    protected List<Actor> cast;
+    protected List<Genre> genre;
 
     @OneToOne
-    private Director director;
-    private double rating;
+    protected Director director;
+    protected double rating;
 
     public Movie(String title, int year, List<Actor> cast, List<Genre> genre, Director director, double rating) {
         this.title = title;

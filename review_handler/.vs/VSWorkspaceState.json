@@ -3,11 +3,14 @@
     "",
     "\\review_handler.Application",
     "\\review_handler.Application\\Commands",
+    "\\review_handler.Application\\Handlers",
     "\\review_handler.Application\\Mappers",
     "\\review_handler.Application\\Queries",
-    "\\review_handler.Core\\Entities",
-    "\\review_handler.Core\\Helpers"
+    "\\review_handler.Infrastructure",
+    "\\review_handler.Infrastructure\\Repositories",
+    "\\review_handler.WebUI",
+    "\\review_handler.WebUI\\Controllers"
   ],
-  "SelectedNode": "\\review_handler.Application\\Handlers",
+  "SelectedNode": "\\review_handler.WebUI\\Controllers\\ReviewController.cs",
   "PreviewInSolutionExplorer": false
 }

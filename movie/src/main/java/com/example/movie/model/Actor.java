@@ -2,6 +2,7 @@ package com.example.movie.model;
 
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 
 import java.util.Date;
@@ -11,10 +12,10 @@ import java.util.UUID;
 @Entity
 public class Actor extends Person {
 
+    @ManyToMany
+    protected List<Movie> filmography;
     @OneToMany
-    private List<Movie> filmography;
-    @OneToMany
-    private List<Award> awards;
+    protected List<Award> awards;
 
     public Actor(String firstName, String lastName, Date dateOfBirth, String nationality, String biography, UUID profileImage, List<Movie> filmography, List<Award> awards) {
         super(firstName, lastName, dateOfBirth, nationality, biography, profileImage);
