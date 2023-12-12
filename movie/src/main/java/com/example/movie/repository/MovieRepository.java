@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.UUID;
 
 public class MovieRepository extends Repository<Movie, UUID>{
-    public MovieRepository(Class<Movie> entityClass) {
-        super(entityClass);
+    public MovieRepository() {
+        super(Movie.class);
     }
 
     public List<Movie> findByTitle(String title) {

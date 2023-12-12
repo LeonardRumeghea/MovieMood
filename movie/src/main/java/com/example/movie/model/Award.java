@@ -1,16 +1,21 @@
 package com.example.movie.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.OneToOne;
+
 import java.util.Date;
 import java.util.UUID;
 
 @Entity
 public class Award extends AbstractEntity<UUID>{
 
-    private String title;
-    private Date date;
-    private Genre category;
-    private String description;
+    protected String title;
+    protected Date date;
+    protected Genre category;
+    protected String description;
+
+    @OneToOne
+    private Actor actor;
 
     public Award(String title, Date date, Genre category, String description) {
         this.title = title;
