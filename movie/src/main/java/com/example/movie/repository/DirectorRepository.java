@@ -1,5 +1,6 @@
 package com.example.movie.repository;
 
+import com.example.movie.aspect.MyAspect;
 import com.example.movie.model.Actor;
 import com.example.movie.model.Director;
 import jakarta.ejb.Stateless;
@@ -14,10 +15,12 @@ public class DirectorRepository extends Repository<Director, UUID>{
         super(Director.class);
     }
 
+    @MyAspect
     public List<Director> findByFirstName(String firstName) {
         return entityManager.createNamedQuery("Director.findByFirstName", Director.class).setParameter(1, firstName).getResultList();
     }
 
+    @MyAspect
     public List<Director> findByLastName(String lastName) {
         return entityManager.createNamedQuery("Director.findByFirstName", Director.class).setParameter(1, lastName).getResultList();
     }

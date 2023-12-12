@@ -18,6 +18,7 @@ public class Award extends AbstractEntity<UUID>{
     private Actor actor;
 
     public Award(String title, Date date, Genre category, String description) {
+        this.id = UUID.randomUUID();
         this.title = title;
         this.date = date;
         this.category = category;

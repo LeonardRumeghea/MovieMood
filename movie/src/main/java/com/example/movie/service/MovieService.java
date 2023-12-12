@@ -4,6 +4,7 @@ import com.example.movie.model.Genre;
 import com.example.movie.model.Movie;
 import com.example.movie.repository.MovieRepository;
 import jakarta.ejb.Stateless;
+import jakarta.inject.Inject;
 
 import java.util.List;
 import java.util.UUID;
@@ -11,6 +12,8 @@ import java.util.stream.Collectors;
 
 @Stateless
 public class MovieService {
+
+    @Inject
     private MovieRepository movieRepository;
     public void createMovie(Movie movie) {
         movieRepository.create(movie);

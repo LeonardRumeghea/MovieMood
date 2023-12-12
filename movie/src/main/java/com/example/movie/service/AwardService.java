@@ -3,6 +3,7 @@ package com.example.movie.service;
 import com.example.movie.model.Award;
 import com.example.movie.repository.AwardRepository;
 import jakarta.ejb.Stateless;
+import jakarta.inject.Inject;
 
 import java.util.Date;
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.UUID;
 
 @Stateless
 public class AwardService {
-
+@Inject
     private AwardRepository awardRepository;
 
     public void createAward(Award award) {
