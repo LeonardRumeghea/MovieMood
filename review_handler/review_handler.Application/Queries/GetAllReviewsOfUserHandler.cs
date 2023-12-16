@@ -16,17 +16,7 @@ namespace review_handler.Application.Queries
         {
             var userEntity = await _unitOfWork.UserRepository.GetByIdAsync(request.UserId);
 
-            if (userEntity == null)
-            {
-                return ResultOfEntity<List<ReviewResponse>>.Failure(HttpStatusCode.NotFound, $"User with id {request.UserId} not found.");
-            }
-
             var reviewEntities = (await _unitOfWork.ReviewRepository.GetAllAsync()).Where(r => r.MovieId == request.UserId).ToList();
-
-            if (reviewEntities == null)
-            {
-                return ResultOfEntity<List<ReviewResponse>>.Failure(HttpStatusCode.NotFound, $"{userEntity.Id} has not reviewed any movies.");
-            }
 
             return ResultOfEntity<List<ReviewResponse>>.Success(
                 HttpStatusCode.OK,

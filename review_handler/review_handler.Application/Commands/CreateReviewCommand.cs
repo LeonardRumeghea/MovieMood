@@ -1,9 +1,10 @@
 ﻿using MediatR;
+using review_handler.Application.Response;
 using review_handler.Core.Helpers;
 
 namespace review_handler.Application.Commands
 {
-    public class CreateReviewCommand : IRequest<Result>
+    public class CreateReviewCommand : IRequest<ResultOfEntity<ReviewResponse>>
     {
         public Guid MovieId { get; set; }
         public Guid UserId { get; set; }

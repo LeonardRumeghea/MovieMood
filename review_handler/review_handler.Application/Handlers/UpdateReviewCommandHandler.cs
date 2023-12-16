@@ -29,7 +29,7 @@ namespace review_handler.Application.Handlers
 
             await _unitOfWork.ReviewRepository.UpdateAsync(reviewEntity);
 
-            return Result.Success();
+            return Result.Success(HttpStatusCode.Created);
         }
     }
 }

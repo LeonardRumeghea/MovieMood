@@ -5,7 +5,7 @@ using review_handler.Application.Queries;
 
 namespace review_handler.API.Controllers
 {
-    [Route("api/v{version:apiVersion}/reviews")]
+    [Route("v{version:apiVersion}/api/reviews")]
     [ApiController]
     [ApiVersion("1.0")]
     public class ReviewController : ControllerBase
@@ -18,7 +18,7 @@ namespace review_handler.API.Controllers
         public async Task<IActionResult> Create([FromBody] CreateReviewCommand command)
         {
             var result = await _mediator.Send(command);
-            return StatusCode((int)result.StatusCode);
+            return StatusCode((int)result.StatusCode, result.Entity);
         }
 
         [HttpGet("{id:Guid}")]
@@ -57,9 +57,9 @@ namespace review_handler.API.Controllers
 
 
         [HttpDelete("{id:Guid}")]
-        public async Task<IActionResult> DeleteReview(UpdateReviewCommand command)
+        public async Task<IActionResult> DeleteReview(Guid id)
         {
-            var result = await _mediator.Send(command);
+            var result = await _mediator.Send(new DeleteReviewCommand() { Id = id });
             return StatusCode((int)result.StatusCode);
         }
     }

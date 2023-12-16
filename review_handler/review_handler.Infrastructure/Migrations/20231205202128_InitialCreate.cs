@@ -115,12 +115,12 @@ namespace review_handler.Infrastructure.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Review", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Review_User_UserId",
-                        column: x => x.UserId,
-                        principalTable: "User",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                    //table.ForeignKey(
+                    //    name: "FK_Review_User_UserId",
+                    //    column: x => x.UserId,
+                    //    principalTable: "User",
+                    //    principalColumn: "Id",
+                    //    onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(

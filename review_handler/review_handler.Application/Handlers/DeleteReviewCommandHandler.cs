@@ -22,7 +22,7 @@ namespace review_handler.Application.Handlers
 
             await _unitOfWork.ReviewRepository.DeleteAsync(reviewEntity);
 
-            return Result.Success();
+            return Result.Success(HttpStatusCode.OK);
         }
     }
 }

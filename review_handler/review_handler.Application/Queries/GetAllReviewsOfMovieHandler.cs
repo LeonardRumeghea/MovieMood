@@ -17,11 +17,6 @@ namespace review_handler.Application.Queries
         {
             var movieEntity = await _unitOfWork.MovieRepository.GetByIdAsync(request.MovieId);
 
-            if (movieEntity == null)
-            {
-                return ResultOfEntity<List<ReviewResponse>>.Failure(HttpStatusCode.NotFound, "Movie not found");
-            }
-
             var reviews = (await _unitOfWork.ReviewRepository.GetAllAsync()).Where(x => x.MovieId == request.MovieId).ToList();
 
             return ResultOfEntity<List<ReviewResponse>>.Success(

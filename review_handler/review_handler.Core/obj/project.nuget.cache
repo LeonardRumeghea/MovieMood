@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nJLap6MlpL2UXtUgVxpCT0YTnCLHrIsAN2wcDtcuACcyysrGYqz3sQmXaYUVLwctXWlHLYCdF+ZFda8m+I3ySw==",
+  "dgSpecHash": "HJE3A0I+AG5ARQQcn3Sg5BXuZsxfjpHvzBkrOIbCRhYInCMJug2GBjO/BsjA5xfcwInn0rG51d9HNKjx2R9/Hg==",
   "success": true,
-  "projectFilePath": "D:\\Facultate\\ASET\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Andreea\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\Andreea\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\Andreea\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -2,6 +2,7 @@
 {
     public class ReviewResponse
     {
+        public Guid Id { get; set; }
         public Guid MovieId { get; set; }
         public Guid UserId { get; set; }
         public int MovieRating { get; set; }

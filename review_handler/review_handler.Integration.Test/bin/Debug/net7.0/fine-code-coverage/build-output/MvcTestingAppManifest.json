@@ -1,0 +1,6 @@
+{
+  "review_handler.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Application",
+  "review_handler.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Core",
+  "review_handler.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Infrastructure",
+  "review_handler.WebUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.WebUI"
+}
