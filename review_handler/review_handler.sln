@@ -23,7 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3DB15187
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "review_handler.Integration.Tests", "review_handler.Integration.Test\review_handler.Integration.Tests.csproj", "{56D69FB3-F9C9-461A-8F86-8532CBC8E690}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "review_handler.Unit.Tests", "review_handler.Unit.Tests\review_handler.Unit.Tests.csproj", "{EA2ACB46-9B59-4F58-90FB-A21FF5A01574}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "review_handler.Unit.Tests", "review_handler.Unit.Tests\review_handler.Unit.Tests.csproj", "{EA2ACB46-9B59-4F58-90FB-A21FF5A01574}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

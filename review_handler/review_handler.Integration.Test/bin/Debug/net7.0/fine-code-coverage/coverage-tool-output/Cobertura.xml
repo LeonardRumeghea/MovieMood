@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.700193423597679" branch-rate="0.339285714285714" lines-covered="362" lines-valid="517" branches-covered="19" branches-valid="56" complexity="215" version="0" timestamp="1702742088">
+<coverage line-rate="0.703632887189293" branch-rate="0.35" lines-covered="368" lines-valid="523" branches-covered="21" branches-valid="60" complexity="216" version="0" timestamp="1702812678">
   <sources>
     <source>D:\Documents\GitHub\MovieMood\review_handler\</source>
     <source>C:\</source>
   </sources>
   <packages>
-    <package name="review_handler.Application" line-rate="0.970588235294118" branch-rate="0.875" complexity="51">
+    <package name="review_handler.Application" line-rate="0.971631205673759" branch-rate="0.916666666666667" complexity="53">
       <classes>
         <class name="review_handler.Application.Commands.CreateReviewCommand" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Application\Commands\CreateReviewCommand.cs" line-rate="1" branch-rate="1" complexity="8">
           <methods>
@@ -102,12 +102,12 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="5" branch="false" />
+                <line number="8" hits="15" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="8" hits="5" branch="false" />
+            <line number="8" hits="15" branch="false" />
           </lines>
         </class>
         <class name="review_handler.Application.Commands.DeleteReviewCommandValidator" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Application\Commands\DeleteReviewCommandValidator.cs" line-rate="0" branch-rate="1" complexity="1">
@@ -210,24 +210,24 @@
           <methods>
             <method name="AddApplicationServices" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="9" branch="false" />
-                <line number="13" hits="9" branch="false" />
-                <line number="14" hits="9" branch="false" />
-                <line number="16" hits="9" branch="false" />
-                <line number="17" hits="9" branch="false" />
-                <line number="19" hits="9" branch="false" />
-                <line number="20" hits="9" branch="false" />
+                <line number="12" hits="11" branch="false" />
+                <line number="13" hits="11" branch="false" />
+                <line number="14" hits="11" branch="false" />
+                <line number="16" hits="11" branch="false" />
+                <line number="17" hits="11" branch="false" />
+                <line number="19" hits="11" branch="false" />
+                <line number="20" hits="11" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="12" hits="9" branch="false" />
-            <line number="13" hits="9" branch="false" />
-            <line number="14" hits="9" branch="false" />
-            <line number="16" hits="9" branch="false" />
-            <line number="17" hits="9" branch="false" />
-            <line number="19" hits="9" branch="false" />
-            <line number="20" hits="9" branch="false" />
+            <line number="12" hits="11" branch="false" />
+            <line number="13" hits="11" branch="false" />
+            <line number="14" hits="11" branch="false" />
+            <line number="16" hits="11" branch="false" />
+            <line number="17" hits="11" branch="false" />
+            <line number="19" hits="11" branch="false" />
+            <line number="20" hits="11" branch="false" />
           </lines>
         </class>
         <class name="review_handler.Application.Handlers.CreateReviewCommandHandler" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Application\Handlers\CreateReviewCommandHandler.cs" line-rate="1" branch-rate="1" complexity="2">
@@ -262,32 +262,32 @@
           <methods>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="4" branch="false" />
+                <line number="12" hits="14" branch="false" />
               </lines>
             </method>
             <method name="Handle" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="15" hits="2" branch="false" />
-                <line number="16" hits="2" branch="false" />
-                <line number="18" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="15" hits="7" branch="false" />
+                <line number="16" hits="7" branch="false" />
+                <line number="18" hits="7" branch="true" condition-coverage="100% (2/2)" />
                 <line number="19" hits="1" branch="false" />
                 <line number="20" hits="1" branch="false" />
-                <line number="23" hits="1" branch="false" />
-                <line number="25" hits="1" branch="false" />
-                <line number="26" hits="2" branch="false" />
+                <line number="23" hits="6" branch="false" />
+                <line number="25" hits="6" branch="false" />
+                <line number="26" hits="7" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="12" hits="4" branch="false" />
-            <line number="15" hits="2" branch="false" />
-            <line number="16" hits="2" branch="false" />
-            <line number="18" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="12" hits="14" branch="false" />
+            <line number="15" hits="7" branch="false" />
+            <line number="16" hits="7" branch="false" />
+            <line number="18" hits="7" branch="true" condition-coverage="100% (2/2)" />
             <line number="19" hits="1" branch="false" />
             <line number="20" hits="1" branch="false" />
-            <line number="23" hits="1" branch="false" />
-            <line number="25" hits="1" branch="false" />
-            <line number="26" hits="2" branch="false" />
+            <line number="23" hits="6" branch="false" />
+            <line number="25" hits="6" branch="false" />
+            <line number="26" hits="7" branch="false" />
           </lines>
         </class>
         <class name="review_handler.Application.Handlers.UpdateReviewCommandHandler" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Application\Handlers\UpdateReviewCommandHandler.cs" line-rate="1" branch-rate="1" complexity="3">
@@ -396,88 +396,98 @@
           <methods>
             <method name="get_MovieId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="88" branch="false" />
+                <line number="9" hits="4" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="88" branch="false" />
+            <line number="9" hits="4" branch="false" />
           </lines>
         </class>
-        <class name="review_handler.Application.Queries.GetAllReviewsOfMovieHandler" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Application\Queries\GetAllReviewsOfMovieHandler.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="review_handler.Application.Queries.GetAllReviewsOfMovieHandler" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Application\Queries\GetAllReviewsOfMovieHandler.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="2" branch="false" />
+                <line number="13" hits="4" branch="false" />
               </lines>
             </method>
-            <method name="Handle" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="Handle" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="17" hits="1" branch="false" />
-                <line number="18" hits="1" branch="false" />
-                <line number="20" hits="87" branch="false" />
+                <line number="17" hits="2" branch="false" />
+                <line number="18" hits="3" branch="false" />
+                <line number="20" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="21" hits="1" branch="false" />
                 <line number="22" hits="1" branch="false" />
-                <line number="23" hits="1" branch="false" />
-                <line number="24" hits="1" branch="false" />
                 <line number="25" hits="1" branch="false" />
                 <line number="26" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+                <line number="29" hits="2" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="13" hits="2" branch="false" />
-            <line number="17" hits="1" branch="false" />
-            <line number="18" hits="1" branch="false" />
-            <line number="20" hits="87" branch="false" />
+            <line number="13" hits="4" branch="false" />
+            <line number="17" hits="2" branch="false" />
+            <line number="18" hits="3" branch="false" />
+            <line number="20" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="21" hits="1" branch="false" />
             <line number="22" hits="1" branch="false" />
-            <line number="23" hits="1" branch="false" />
-            <line number="24" hits="1" branch="false" />
             <line number="25" hits="1" branch="false" />
             <line number="26" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="29" hits="2" branch="false" />
           </lines>
         </class>
         <class name="review_handler.Application.Queries.GetAllReviewsOfUser" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Application\Queries\GetAllReviewsOfUser.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="86" branch="false" />
+                <line number="9" hits="4" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="86" branch="false" />
+            <line number="9" hits="4" branch="false" />
           </lines>
         </class>
-        <class name="review_handler.Application.Queries.GetAllReviewsOfUserHandler" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Application\Queries\GetAllReviewsOfUserHandler.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="review_handler.Application.Queries.GetAllReviewsOfUserHandler" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Application\Queries\GetAllReviewsOfUserHandler.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="2" branch="false" />
+                <line number="13" hits="4" branch="false" />
               </lines>
             </method>
-            <method name="Handle" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="Handle" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="16" hits="1" branch="false" />
-                <line number="17" hits="1" branch="false" />
-                <line number="19" hits="85" branch="false" />
+                <line number="16" hits="2" branch="false" />
+                <line number="17" hits="3" branch="false" />
+                <line number="19" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="20" hits="1" branch="false" />
                 <line number="21" hits="1" branch="false" />
                 <line number="22" hits="1" branch="false" />
-                <line number="23" hits="1" branch="false" />
-                <line number="24" hits="1" branch="false" />
                 <line number="25" hits="1" branch="false" />
+                <line number="26" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+                <line number="29" hits="2" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="13" hits="2" branch="false" />
-            <line number="16" hits="1" branch="false" />
-            <line number="17" hits="1" branch="false" />
-            <line number="19" hits="85" branch="false" />
+            <line number="13" hits="4" branch="false" />
+            <line number="16" hits="2" branch="false" />
+            <line number="17" hits="3" branch="false" />
+            <line number="19" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="20" hits="1" branch="false" />
             <line number="21" hits="1" branch="false" />
             <line number="22" hits="1" branch="false" />
-            <line number="23" hits="1" branch="false" />
-            <line number="24" hits="1" branch="false" />
             <line number="25" hits="1" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="29" hits="2" branch="false" />
           </lines>
         </class>
         <class name="review_handler.Application.Queries.GetReviewById" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Application\Queries\GetReviewById.cs" line-rate="1" branch-rate="1" complexity="1">
@@ -526,60 +536,60 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="5" hits="23" branch="false" />
+                <line number="5" hits="33" branch="false" />
               </lines>
             </method>
             <method name="get_MovieId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="6" hits="20" branch="false" />
+                <line number="6" hits="25" branch="false" />
               </lines>
             </method>
             <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="20" branch="false" />
+                <line number="7" hits="25" branch="false" />
               </lines>
             </method>
             <method name="get_MovieRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="19" branch="false" />
+                <line number="8" hits="24" branch="false" />
               </lines>
             </method>
             <method name="get_CastRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="19" branch="false" />
+                <line number="9" hits="24" branch="false" />
               </lines>
             </method>
             <method name="get_DirectorRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="19" branch="false" />
+                <line number="10" hits="24" branch="false" />
               </lines>
             </method>
             <method name="get_GenreRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="19" branch="false" />
+                <line number="11" hits="24" branch="false" />
               </lines>
             </method>
             <method name="get_SciptRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="19" branch="false" />
+                <line number="12" hits="24" branch="false" />
               </lines>
             </method>
             <method name="get_ReviewText" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="19" branch="false" />
+                <line number="13" hits="24" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="23" branch="false" />
-            <line number="6" hits="20" branch="false" />
-            <line number="7" hits="20" branch="false" />
-            <line number="8" hits="19" branch="false" />
-            <line number="9" hits="19" branch="false" />
-            <line number="10" hits="19" branch="false" />
-            <line number="11" hits="19" branch="false" />
-            <line number="12" hits="19" branch="false" />
-            <line number="13" hits="19" branch="false" />
+            <line number="5" hits="33" branch="false" />
+            <line number="6" hits="25" branch="false" />
+            <line number="7" hits="25" branch="false" />
+            <line number="8" hits="24" branch="false" />
+            <line number="9" hits="24" branch="false" />
+            <line number="10" hits="24" branch="false" />
+            <line number="11" hits="24" branch="false" />
+            <line number="12" hits="24" branch="false" />
+            <line number="13" hits="24" branch="false" />
           </lines>
         </class>
       </classes>
@@ -840,60 +850,60 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="5" hits="7" branch="false" />
+                <line number="5" hits="9" branch="false" />
               </lines>
             </method>
             <method name="get_MovieId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="6" hits="183" branch="false" />
+                <line number="6" hits="16" branch="false" />
               </lines>
             </method>
             <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="13" branch="false" />
+                <line number="7" hits="16" branch="false" />
               </lines>
             </method>
             <method name="get_MovieRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="14" branch="false" />
+                <line number="8" hits="16" branch="false" />
               </lines>
             </method>
             <method name="get_CastRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="14" branch="false" />
+                <line number="9" hits="16" branch="false" />
               </lines>
             </method>
             <method name="get_DirectorRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="14" branch="false" />
+                <line number="10" hits="16" branch="false" />
               </lines>
             </method>
             <method name="get_GenreRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="14" branch="false" />
+                <line number="11" hits="16" branch="false" />
               </lines>
             </method>
             <method name="get_SciptRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="14" branch="false" />
+                <line number="12" hits="16" branch="false" />
               </lines>
             </method>
             <method name="get_ReviewText" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="14" branch="false" />
+                <line number="13" hits="16" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="7" branch="false" />
-            <line number="6" hits="183" branch="false" />
-            <line number="7" hits="13" branch="false" />
-            <line number="8" hits="14" branch="false" />
-            <line number="9" hits="14" branch="false" />
-            <line number="10" hits="14" branch="false" />
-            <line number="11" hits="14" branch="false" />
-            <line number="12" hits="14" branch="false" />
-            <line number="13" hits="14" branch="false" />
+            <line number="5" hits="9" branch="false" />
+            <line number="6" hits="16" branch="false" />
+            <line number="7" hits="16" branch="false" />
+            <line number="8" hits="16" branch="false" />
+            <line number="9" hits="16" branch="false" />
+            <line number="10" hits="16" branch="false" />
+            <line number="11" hits="16" branch="false" />
+            <line number="12" hits="16" branch="false" />
+            <line number="13" hits="16" branch="false" />
           </lines>
         </class>
         <class name="review_handler.Core.Entities.ReviewBuilder.ReviewBuilder" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Entities\ReviewBuilder\ReviewBuilder.cs" line-rate="0" branch-rate="1" complexity="10">
@@ -1092,7 +1102,7 @@
           <methods>
             <method name="get_IsSuccess" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="4" branch="false" />
+                <line number="7" hits="9" branch="false" />
               </lines>
             </method>
             <method name="get_IsFailure" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -1107,7 +1117,7 @@
             </method>
             <method name="get_StatusCode" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="8" branch="false" />
+                <line number="10" hits="18" branch="false" />
               </lines>
             </method>
             <method name="get_HttpStatusCode" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -1122,7 +1132,7 @@
             </method>
             <method name="Success" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="2" branch="false" />
+                <line number="16" hits="7" branch="false" />
               </lines>
             </method>
             <method name="Failure" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
@@ -1137,13 +1147,13 @@
             </method>
           </methods>
           <lines>
-            <line number="7" hits="4" branch="false" />
+            <line number="7" hits="9" branch="false" />
             <line number="8" hits="0" branch="false" />
             <line number="9" hits="2" branch="false" />
-            <line number="10" hits="8" branch="false" />
+            <line number="10" hits="18" branch="false" />
             <line number="12" hits="0" branch="false" />
             <line number="14" hits="0" branch="false" />
-            <line number="16" hits="2" branch="false" />
+            <line number="16" hits="7" branch="false" />
             <line number="18" hits="0" branch="false" />
             <line number="21" hits="2" branch="false" />
           </lines>
@@ -1152,7 +1162,7 @@
           <methods>
             <method name="get_IsSuccess" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="14" branch="false" />
+                <line number="7" hits="18" branch="false" />
               </lines>
             </method>
             <method name="get_IsFailure" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -1162,7 +1172,7 @@
             </method>
             <method name="get_Message" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="2" branch="false" />
+                <line number="9" hits="6" branch="false" />
               </lines>
             </method>
             <method name="get_Entity" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -1172,7 +1182,7 @@
             </method>
             <method name="get_StatusCode" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="16" branch="false" />
+                <line number="11" hits="20" branch="false" />
               </lines>
             </method>
             <method name="Success" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
@@ -1192,60 +1202,60 @@
             </method>
             <method name="Failure" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="1" branch="false" />
+                <line number="21" hits="3" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="7" hits="14" branch="false" />
+            <line number="7" hits="18" branch="false" />
             <line number="8" hits="0" branch="false" />
-            <line number="9" hits="2" branch="false" />
+            <line number="9" hits="6" branch="false" />
             <line number="10" hits="18" branch="false" />
-            <line number="11" hits="16" branch="false" />
+            <line number="11" hits="20" branch="false" />
             <line number="13" hits="1" branch="false" />
             <line number="16" hits="8" branch="false" />
             <line number="18" hits="0" branch="false" />
-            <line number="21" hits="1" branch="false" />
+            <line number="21" hits="3" branch="false" />
           </lines>
         </class>
       </classes>
     </package>
-    <package name="review_handler.Infrastructure" line-rate="0.632911392405063" branch-rate="0.5" complexity="38">
+    <package name="review_handler.Infrastructure" line-rate="0.547945205479452" branch-rate="0.166666666666667" complexity="36">
       <classes>
         <class name="review_handler.Infrastructure.ConfigureServices" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\ConfigureServices.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="AddInfrastrutureServices" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="9" branch="false" />
-                <line number="17" hits="9" branch="false" />
-                <line number="18" hits="9" branch="false" />
-                <line number="20" hits="9" branch="false" />
-                <line number="21" hits="9" branch="false" />
-                <line number="22" hits="9" branch="false" />
-                <line number="23" hits="9" branch="false" />
-                <line number="24" hits="9" branch="false" />
-                <line number="25" hits="9" branch="false" />
-                <line number="27" hits="9" branch="false" />
-                <line number="28" hits="18" branch="false" />
-                <line number="30" hits="9" branch="false" />
-                <line number="31" hits="9" branch="false" />
+                <line number="16" hits="11" branch="false" />
+                <line number="17" hits="11" branch="false" />
+                <line number="18" hits="11" branch="false" />
+                <line number="20" hits="11" branch="false" />
+                <line number="21" hits="11" branch="false" />
+                <line number="22" hits="11" branch="false" />
+                <line number="23" hits="11" branch="false" />
+                <line number="24" hits="11" branch="false" />
+                <line number="25" hits="11" branch="false" />
+                <line number="27" hits="11" branch="false" />
+                <line number="28" hits="22" branch="false" />
+                <line number="30" hits="11" branch="false" />
+                <line number="31" hits="11" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="16" hits="9" branch="false" />
-            <line number="17" hits="9" branch="false" />
-            <line number="18" hits="9" branch="false" />
-            <line number="20" hits="9" branch="false" />
-            <line number="21" hits="9" branch="false" />
-            <line number="22" hits="9" branch="false" />
-            <line number="23" hits="9" branch="false" />
-            <line number="24" hits="9" branch="false" />
-            <line number="25" hits="9" branch="false" />
-            <line number="27" hits="9" branch="false" />
-            <line number="28" hits="18" branch="false" />
-            <line number="30" hits="9" branch="false" />
-            <line number="31" hits="9" branch="false" />
+            <line number="16" hits="11" branch="false" />
+            <line number="17" hits="11" branch="false" />
+            <line number="18" hits="11" branch="false" />
+            <line number="20" hits="11" branch="false" />
+            <line number="21" hits="11" branch="false" />
+            <line number="22" hits="11" branch="false" />
+            <line number="23" hits="11" branch="false" />
+            <line number="24" hits="11" branch="false" />
+            <line number="25" hits="11" branch="false" />
+            <line number="27" hits="11" branch="false" />
+            <line number="28" hits="22" branch="false" />
+            <line number="30" hits="11" branch="false" />
+            <line number="31" hits="11" branch="false" />
           </lines>
         </class>
         <class name="review_handler.Infrastructure.Data.DatabaseContext" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Data\DatabaseContext.cs" line-rate="0.363636363636364" branch-rate="1" complexity="8">
@@ -1287,18 +1297,18 @@
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="18" branch="false" />
-                <line number="18" hits="18" branch="false" />
-                <line number="19" hits="18" branch="false" />
-                <line number="20" hits="18" branch="false" />
+                <line number="17" hits="11" branch="false" />
+                <line number="18" hits="11" branch="false" />
+                <line number="19" hits="11" branch="false" />
+                <line number="20" hits="11" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="17" hits="18" branch="false" />
-            <line number="18" hits="18" branch="false" />
-            <line number="19" hits="18" branch="false" />
-            <line number="20" hits="18" branch="false" />
+            <line number="17" hits="11" branch="false" />
+            <line number="18" hits="11" branch="false" />
+            <line number="19" hits="11" branch="false" />
+            <line number="20" hits="11" branch="false" />
             <line number="22" hits="0" branch="false" />
             <line number="23" hits="0" branch="false" />
             <line number="24" hits="0" branch="false" />
@@ -1308,7 +1318,7 @@
             <line number="29" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="review_handler.Infrastructure.Data.UnitOfWork" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Data\UnitOfWork.cs" line-rate="0.538461538461538" branch-rate="0.5" complexity="14">
+        <class name="review_handler.Infrastructure.Data.UnitOfWork" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Data\UnitOfWork.cs" line-rate="0.230769230769231" branch-rate="0.166666666666667" complexity="14">
           <methods>
             <method name="get_ActorRepository" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -1334,33 +1344,33 @@
                 <line number="47" hits="0" branch="false" />
               </lines>
             </method>
-            <method name="get_MovieRepository" signature="()" line-rate="1" branch-rate="1" complexity="2">
+            <method name="get_MovieRepository" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="53" hits="1" branch="false" />
-                <line number="54" hits="1" branch="true" condition-coverage="100% (2/2)" />
-                <line number="55" hits="1" branch="false" />
-                <line number="56" hits="1" branch="false" />
+                <line number="53" hits="0" branch="false" />
+                <line number="54" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="55" hits="0" branch="false" />
+                <line number="56" hits="0" branch="false" />
               </lines>
             </method>
             <method name="get_ReviewRepository" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="62" hits="16" branch="false" />
-                <line number="63" hits="16" branch="true" condition-coverage="100% (2/2)" />
-                <line number="64" hits="16" branch="false" />
-                <line number="65" hits="16" branch="false" />
+                <line number="62" hits="28" branch="false" />
+                <line number="63" hits="28" branch="true" condition-coverage="100% (2/2)" />
+                <line number="64" hits="28" branch="false" />
+                <line number="65" hits="28" branch="false" />
               </lines>
             </method>
-            <method name="get_UserRepository" signature="()" line-rate="1" branch-rate="1" complexity="2">
+            <method name="get_UserRepository" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="71" hits="1" branch="false" />
-                <line number="72" hits="1" branch="true" condition-coverage="100% (2/2)" />
-                <line number="73" hits="1" branch="false" />
-                <line number="74" hits="1" branch="false" />
+                <line number="71" hits="0" branch="false" />
+                <line number="72" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="73" hits="0" branch="false" />
+                <line number="74" hits="0" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="28" branch="false" />
+                <line number="21" hits="42" branch="false" />
               </lines>
             </method>
             <method name="SaveChanges" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -1370,7 +1380,7 @@
             </method>
           </methods>
           <lines>
-            <line number="21" hits="28" branch="false" />
+            <line number="21" hits="42" branch="false" />
             <line number="26" hits="0" branch="false" />
             <line number="27" hits="0" branch="true" condition-coverage="0% (0/2)" />
             <line number="28" hits="0" branch="false" />
@@ -1383,18 +1393,18 @@
             <line number="45" hits="0" branch="true" condition-coverage="0% (0/2)" />
             <line number="46" hits="0" branch="false" />
             <line number="47" hits="0" branch="false" />
-            <line number="53" hits="1" branch="false" />
-            <line number="54" hits="1" branch="true" condition-coverage="100% (2/2)" />
-            <line number="55" hits="1" branch="false" />
-            <line number="56" hits="1" branch="false" />
-            <line number="62" hits="16" branch="false" />
-            <line number="63" hits="16" branch="true" condition-coverage="100% (2/2)" />
-            <line number="64" hits="16" branch="false" />
-            <line number="65" hits="16" branch="false" />
-            <line number="71" hits="1" branch="false" />
-            <line number="72" hits="1" branch="true" condition-coverage="100% (2/2)" />
-            <line number="73" hits="1" branch="false" />
-            <line number="74" hits="1" branch="false" />
+            <line number="53" hits="0" branch="false" />
+            <line number="54" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="55" hits="0" branch="false" />
+            <line number="56" hits="0" branch="false" />
+            <line number="62" hits="28" branch="false" />
+            <line number="63" hits="28" branch="true" condition-coverage="100% (2/2)" />
+            <line number="64" hits="28" branch="false" />
+            <line number="65" hits="28" branch="false" />
+            <line number="71" hits="0" branch="false" />
+            <line number="72" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="73" hits="0" branch="false" />
+            <line number="74" hits="0" branch="false" />
             <line number="77" hits="6" branch="false" />
           </lines>
         </class>
@@ -1426,7 +1436,7 @@
           <methods>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="32" branch="false" />
+                <line number="11" hits="42" branch="false" />
               </lines>
             </method>
             <method name="AddAsync" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -1440,20 +1450,20 @@
             </method>
             <method name="DeleteAsync" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="27" hits="1" branch="false" />
-                <line number="28" hits="1" branch="false" />
-                <line number="29" hits="1" branch="false" />
-                <line number="30" hits="1" branch="false" />
+                <line number="27" hits="6" branch="false" />
+                <line number="28" hits="6" branch="false" />
+                <line number="29" hits="6" branch="false" />
+                <line number="30" hits="6" branch="false" />
               </lines>
             </method>
             <method name="GetAllAsync" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="2" branch="false" />
+                <line number="13" hits="4" branch="false" />
               </lines>
             </method>
             <method name="GetByIdAsync" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="8" branch="false" />
+                <line number="15" hits="11" branch="false" />
               </lines>
             </method>
             <method name="SaveChanges" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -1471,18 +1481,18 @@
             </method>
           </methods>
           <lines>
-            <line number="11" hits="32" branch="false" />
-            <line number="13" hits="2" branch="false" />
-            <line number="15" hits="8" branch="false" />
+            <line number="11" hits="42" branch="false" />
+            <line number="13" hits="4" branch="false" />
+            <line number="15" hits="11" branch="false" />
             <line number="19" hits="6" branch="false" />
             <line number="20" hits="6" branch="false" />
             <line number="21" hits="6" branch="false" />
             <line number="23" hits="6" branch="false" />
             <line number="24" hits="6" branch="false" />
-            <line number="27" hits="1" branch="false" />
-            <line number="28" hits="1" branch="false" />
-            <line number="29" hits="1" branch="false" />
-            <line number="30" hits="1" branch="false" />
+            <line number="27" hits="6" branch="false" />
+            <line number="28" hits="6" branch="false" />
+            <line number="29" hits="6" branch="false" />
+            <line number="30" hits="6" branch="false" />
             <line number="34" hits="1" branch="false" />
             <line number="35" hits="1" branch="false" />
             <line number="36" hits="1" branch="false" />
@@ -1502,65 +1512,45 @@
             <line number="10" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="review_handler.Infrastructure.Repositories.MovieRepository" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Repositories\MovieRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="review_handler.Infrastructure.Repositories.MovieRepository" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Repositories\MovieRepository.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
-            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="3" branch="false" />
+                <line number="10" hits="0" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="10" hits="3" branch="false" />
+            <line number="10" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="review_handler.Infrastructure.Repositories.ReviewRepository" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Repositories\ReviewRepository.cs" line-rate="0.142857142857143" branch-rate="1" complexity="3">
+        <class name="review_handler.Infrastructure.Repositories.ReviewRepository" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Repositories\ReviewRepository.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="42" branch="false" />
-              </lines>
-            </method>
-            <method name="GetAllReviewsOfMovie" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="19" hits="0" branch="false" />
-                <line number="20" hits="0" branch="false" />
-                <line number="21" hits="0" branch="false" />
-              </lines>
-            </method>
-            <method name="GetAllReviewsOfUser" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="14" hits="0" branch="false" />
-                <line number="15" hits="0" branch="false" />
-                <line number="16" hits="0" branch="false" />
+                <line number="11" hits="63" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="11" hits="42" branch="false" />
-            <line number="14" hits="0" branch="false" />
-            <line number="15" hits="0" branch="false" />
-            <line number="16" hits="0" branch="false" />
-            <line number="19" hits="0" branch="false" />
-            <line number="20" hits="0" branch="false" />
-            <line number="21" hits="0" branch="false" />
+            <line number="11" hits="63" branch="false" />
           </lines>
         </class>
-        <class name="review_handler.Infrastructure.Repositories.UserRepository" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Repositories\UserRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="review_handler.Infrastructure.Repositories.UserRepository" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Repositories\UserRepository.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
-            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="3" branch="false" />
+                <line number="10" hits="0" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="10" hits="3" branch="false" />
+            <line number="10" hits="0" branch="false" />
           </lines>
         </class>
       </classes>
     </package>
-    <package name="review_handler.Integration.Tests" line-rate="0.95" branch-rate="1" complexity="15">
+    <package name="review_handler.Integration.Tests" line-rate="0.990654205607477" branch-rate="1" complexity="16">
       <classes>
         <class name="AutoGeneratedProgram" filename="C:\Users\Leonard\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -1574,86 +1564,67 @@
             <line number="4" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="review_handler.Integration.Tests.BaseIntegrationTests" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Integration.Test\BaseIntegrationTests.cs" line-rate="0.714285714285714" branch-rate="1" complexity="3">
+        <class name="review_handler.Integration.Tests.BaseIntegrationTests" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Integration.Test\BaseIntegrationTests.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="get_HttpClient" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="23" branch="false" />
-              </lines>
-            </method>
-            <method name="CleanDatabases" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="25" hits="0" branch="false" />
-                <line number="26" hits="0" branch="false" />
-                <line number="27" hits="0" branch="false" />
-                <line number="28" hits="0" branch="false" />
+                <line number="10" hits="32" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="9" branch="false" />
-                <line number="11" hits="9" branch="false" />
-                <line number="13" hits="23" branch="false" />
-                <line number="16" hits="9" branch="false" />
-                <line number="17" hits="9" branch="false" />
-                <line number="18" hits="9" branch="false" />
-                <line number="19" hits="18" branch="false" />
-                <line number="20" hits="9" branch="false" />
-                <line number="21" hits="9" branch="false" />
-                <line number="22" hits="9" branch="false" />
+                <line number="12" hits="11" branch="false" />
+                <line number="13" hits="11" branch="false" />
+                <line number="14" hits="11" branch="false" />
+                <line number="15" hits="22" branch="false" />
+                <line number="16" hits="11" branch="false" />
+                <line number="17" hits="11" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="10" hits="9" branch="false" />
-            <line number="11" hits="9" branch="false" />
-            <line number="13" hits="23" branch="false" />
-            <line number="16" hits="9" branch="false" />
-            <line number="17" hits="9" branch="false" />
-            <line number="18" hits="9" branch="false" />
-            <line number="19" hits="18" branch="false" />
-            <line number="20" hits="9" branch="false" />
-            <line number="21" hits="9" branch="false" />
-            <line number="22" hits="9" branch="false" />
-            <line number="25" hits="0" branch="false" />
-            <line number="26" hits="0" branch="false" />
-            <line number="27" hits="0" branch="false" />
-            <line number="28" hits="0" branch="false" />
+            <line number="10" hits="32" branch="false" />
+            <line number="12" hits="11" branch="false" />
+            <line number="13" hits="11" branch="false" />
+            <line number="14" hits="11" branch="false" />
+            <line number="15" hits="22" branch="false" />
+            <line number="16" hits="11" branch="false" />
+            <line number="17" hits="11" branch="false" />
           </lines>
         </class>
-        <class name="review_handler.Integration.Tests.ReviewTests" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Integration.Test\ReviewTests.cs" line-rate="1" branch-rate="1" complexity="11">
+        <class name="review_handler.Integration.Tests.ReviewTests" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.Integration.Test\ReviewTests.cs" line-rate="1" branch-rate="1" complexity="13">
           <methods>
             <method name="CreateReviewSUT" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="138" hits="7" branch="false" />
-                <line number="139" hits="7" branch="false" />
-                <line number="140" hits="7" branch="false" />
-                <line number="141" hits="7" branch="false" />
-                <line number="142" hits="7" branch="false" />
-                <line number="143" hits="7" branch="false" />
-                <line number="144" hits="7" branch="false" />
-                <line number="145" hits="7" branch="false" />
-                <line number="146" hits="7" branch="false" />
-                <line number="147" hits="7" branch="false" />
-                <line number="148" hits="7" branch="false" />
-                <line number="149" hits="7" branch="false" />
-                <line number="150" hits="7" branch="false" />
+                <line number="174" hits="7" branch="false" />
+                <line number="175" hits="7" branch="false" />
+                <line number="176" hits="7" branch="false" />
+                <line number="177" hits="7" branch="false" />
+                <line number="178" hits="7" branch="false" />
+                <line number="179" hits="7" branch="false" />
+                <line number="180" hits="7" branch="false" />
+                <line number="181" hits="7" branch="false" />
+                <line number="182" hits="7" branch="false" />
+                <line number="183" hits="7" branch="false" />
+                <line number="184" hits="7" branch="false" />
+                <line number="185" hits="7" branch="false" />
+                <line number="186" hits="7" branch="false" />
               </lines>
             </method>
             <method name="UpdateReviewSUT" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="153" hits="2" branch="false" />
-                <line number="154" hits="2" branch="false" />
-                <line number="155" hits="2" branch="false" />
-                <line number="156" hits="2" branch="false" />
-                <line number="157" hits="2" branch="false" />
-                <line number="158" hits="2" branch="false" />
-                <line number="159" hits="2" branch="false" />
-                <line number="160" hits="2" branch="false" />
-                <line number="161" hits="2" branch="false" />
-                <line number="162" hits="2" branch="false" />
-                <line number="163" hits="2" branch="false" />
-                <line number="164" hits="2" branch="false" />
+                <line number="189" hits="2" branch="false" />
+                <line number="190" hits="2" branch="false" />
+                <line number="191" hits="2" branch="false" />
+                <line number="192" hits="2" branch="false" />
+                <line number="193" hits="2" branch="false" />
+                <line number="194" hits="2" branch="false" />
+                <line number="195" hits="2" branch="false" />
+                <line number="196" hits="2" branch="false" />
+                <line number="197" hits="2" branch="false" />
+                <line number="198" hits="2" branch="false" />
+                <line number="199" hits="2" branch="false" />
+                <line number="200" hits="2" branch="false" />
               </lines>
             </method>
             <method name="When_CreateReview_Then_ShouldSaveIt" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -1662,94 +1633,116 @@
                 <line number="15" hits="1" branch="false" />
                 <line number="18" hits="1" branch="false" />
                 <line number="19" hits="1" branch="false" />
-                <line number="20" hits="1" branch="false" />
+                <line number="22" hits="1" branch="false" />
+                <line number="23" hits="1" branch="false" />
+                <line number="24" hits="1" branch="false" />
               </lines>
             </method>
             <method name="When_DeleteReviewWithInvalidId_Then_ShouldReturnNotFound" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="68" hits="1" branch="false" />
-                <line number="70" hits="1" branch="false" />
-                <line number="73" hits="1" branch="false" />
-                <line number="74" hits="1" branch="false" />
+                <line number="75" hits="1" branch="false" />
+                <line number="77" hits="1" branch="false" />
+                <line number="80" hits="1" branch="false" />
+                <line number="81" hits="1" branch="false" />
               </lines>
             </method>
             <method name="When_DeleteReview_Then_ShouldDeleteIt" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="52" hits="1" branch="false" />
-                <line number="54" hits="1" branch="false" />
-                <line number="55" hits="1" branch="false" />
-                <line number="56" hits="1" branch="false" />
                 <line number="59" hits="1" branch="false" />
+                <line number="61" hits="1" branch="false" />
                 <line number="62" hits="1" branch="false" />
                 <line number="63" hits="1" branch="false" />
-                <line number="64" hits="1" branch="false" />
+                <line number="66" hits="1" branch="false" />
+                <line number="69" hits="1" branch="false" />
+                <line number="70" hits="1" branch="false" />
+                <line number="71" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="When_GetAllReviewsOfMovieWithInvalidId_Then_ShouldReturnNotFound" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="165" hits="1" branch="false" />
+                <line number="167" hits="1" branch="false" />
+                <line number="170" hits="1" branch="false" />
+                <line number="171" hits="1" branch="false" />
               </lines>
             </method>
             <method name="When_GetAllReviewsOfMovie_Then_ShouldReturnThem" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="123" hits="1" branch="false" />
-                <line number="125" hits="1" branch="false" />
-                <line number="126" hits="1" branch="false" />
-                <line number="127" hits="1" branch="false" />
-                <line number="130" hits="1" branch="false" />
-                <line number="133" hits="1" branch="false" />
-                <line number="134" hits="1" branch="false" />
-                <line number="135" hits="1" branch="false" />
+                <line number="146" hits="1" branch="false" />
+                <line number="148" hits="1" branch="false" />
+                <line number="149" hits="1" branch="false" />
+                <line number="150" hits="1" branch="false" />
+                <line number="153" hits="1" branch="false" />
+                <line number="156" hits="1" branch="false" />
+                <line number="157" hits="1" branch="false" />
+                <line number="160" hits="1" branch="false" />
+                <line number="161" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="When_GetAllReviewsOfUserWithInvalidId_Then_ShouldReturnNotFound" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="136" hits="1" branch="false" />
+                <line number="138" hits="1" branch="false" />
+                <line number="141" hits="1" branch="false" />
+                <line number="142" hits="1" branch="false" />
               </lines>
             </method>
             <method name="When_GetAllReviewsOfUser_Then_ShouldReturnThem" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="107" hits="1" branch="false" />
-                <line number="109" hits="1" branch="false" />
-                <line number="110" hits="1" branch="false" />
-                <line number="111" hits="1" branch="false" />
-                <line number="114" hits="1" branch="false" />
                 <line number="117" hits="1" branch="false" />
-                <line number="118" hits="1" branch="false" />
                 <line number="119" hits="1" branch="false" />
+                <line number="120" hits="1" branch="false" />
+                <line number="121" hits="1" branch="false" />
+                <line number="124" hits="1" branch="false" />
+                <line number="127" hits="1" branch="false" />
+                <line number="128" hits="1" branch="false" />
+                <line number="131" hits="1" branch="false" />
+                <line number="132" hits="1" branch="false" />
               </lines>
             </method>
             <method name="When_GetReviewById_Then_ShouldReturnIt" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="24" hits="1" branch="false" />
-                <line number="26" hits="1" branch="false" />
-                <line number="27" hits="1" branch="false" />
                 <line number="28" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
                 <line number="31" hits="1" branch="false" />
-                <line number="34" hits="1" branch="false" />
+                <line number="32" hits="1" branch="false" />
                 <line number="35" hits="1" branch="false" />
-                <line number="36" hits="1" branch="false" />
+                <line number="38" hits="1" branch="false" />
+                <line number="39" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
               </lines>
             </method>
             <method name="When_GetReviewByInvalidId_Then_ShouldReturnNotFound" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="40" hits="1" branch="false" />
-                <line number="41" hits="1" branch="false" />
-                <line number="43" hits="1" branch="false" />
-                <line number="46" hits="1" branch="false" />
                 <line number="47" hits="1" branch="false" />
                 <line number="48" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="53" hits="1" branch="false" />
+                <line number="54" hits="1" branch="false" />
+                <line number="55" hits="1" branch="false" />
               </lines>
             </method>
             <method name="When_UpdateReviewWithInvalidId_Then_ShouldReturnNotFound" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="94" hits="1" branch="false" />
-                <line number="96" hits="1" branch="false" />
-                <line number="99" hits="1" branch="false" />
-                <line number="102" hits="1" branch="false" />
-                <line number="103" hits="1" branch="false" />
+                <line number="104" hits="1" branch="false" />
+                <line number="106" hits="1" branch="false" />
+                <line number="109" hits="1" branch="false" />
+                <line number="112" hits="1" branch="false" />
+                <line number="113" hits="1" branch="false" />
               </lines>
             </method>
             <method name="When_UpdateReview_Then_ShouldUpdateIt" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="78" hits="1" branch="false" />
-                <line number="80" hits="1" branch="false" />
-                <line number="81" hits="1" branch="false" />
-                <line number="82" hits="1" branch="false" />
                 <line number="85" hits="1" branch="false" />
+                <line number="87" hits="1" branch="false" />
                 <line number="88" hits="1" branch="false" />
                 <line number="89" hits="1" branch="false" />
-                <line number="90" hits="1" branch="false" />
+                <line number="92" hits="1" branch="false" />
+                <line number="95" hits="1" branch="false" />
+                <line number="96" hits="1" branch="false" />
+                <line number="99" hits="1" branch="false" />
+                <line number="100" hits="1" branch="false" />
               </lines>
             </method>
           </methods>
@@ -1758,182 +1751,196 @@
             <line number="15" hits="1" branch="false" />
             <line number="18" hits="1" branch="false" />
             <line number="19" hits="1" branch="false" />
-            <line number="20" hits="1" branch="false" />
+            <line number="22" hits="1" branch="false" />
+            <line number="23" hits="1" branch="false" />
             <line number="24" hits="1" branch="false" />
-            <line number="26" hits="1" branch="false" />
-            <line number="27" hits="1" branch="false" />
             <line number="28" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
             <line number="31" hits="1" branch="false" />
-            <line number="34" hits="1" branch="false" />
+            <line number="32" hits="1" branch="false" />
             <line number="35" hits="1" branch="false" />
-            <line number="36" hits="1" branch="false" />
-            <line number="40" hits="1" branch="false" />
-            <line number="41" hits="1" branch="false" />
+            <line number="38" hits="1" branch="false" />
+            <line number="39" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
             <line number="43" hits="1" branch="false" />
-            <line number="46" hits="1" branch="false" />
             <line number="47" hits="1" branch="false" />
             <line number="48" hits="1" branch="false" />
-            <line number="52" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="53" hits="1" branch="false" />
             <line number="54" hits="1" branch="false" />
             <line number="55" hits="1" branch="false" />
-            <line number="56" hits="1" branch="false" />
             <line number="59" hits="1" branch="false" />
+            <line number="61" hits="1" branch="false" />
             <line number="62" hits="1" branch="false" />
             <line number="63" hits="1" branch="false" />
-            <line number="64" hits="1" branch="false" />
-            <line number="68" hits="1" branch="false" />
+            <line number="66" hits="1" branch="false" />
+            <line number="69" hits="1" branch="false" />
             <line number="70" hits="1" branch="false" />
-            <line number="73" hits="1" branch="false" />
-            <line number="74" hits="1" branch="false" />
-            <line number="78" hits="1" branch="false" />
+            <line number="71" hits="1" branch="false" />
+            <line number="75" hits="1" branch="false" />
+            <line number="77" hits="1" branch="false" />
             <line number="80" hits="1" branch="false" />
             <line number="81" hits="1" branch="false" />
-            <line number="82" hits="1" branch="false" />
             <line number="85" hits="1" branch="false" />
+            <line number="87" hits="1" branch="false" />
             <line number="88" hits="1" branch="false" />
             <line number="89" hits="1" branch="false" />
-            <line number="90" hits="1" branch="false" />
-            <line number="94" hits="1" branch="false" />
+            <line number="92" hits="1" branch="false" />
+            <line number="95" hits="1" branch="false" />
             <line number="96" hits="1" branch="false" />
             <line number="99" hits="1" branch="false" />
-            <line number="102" hits="1" branch="false" />
-            <line number="103" hits="1" branch="false" />
-            <line number="107" hits="1" branch="false" />
+            <line number="100" hits="1" branch="false" />
+            <line number="104" hits="1" branch="false" />
+            <line number="106" hits="1" branch="false" />
             <line number="109" hits="1" branch="false" />
-            <line number="110" hits="1" branch="false" />
-            <line number="111" hits="1" branch="false" />
-            <line number="114" hits="1" branch="false" />
+            <line number="112" hits="1" branch="false" />
+            <line number="113" hits="1" branch="false" />
             <line number="117" hits="1" branch="false" />
-            <line number="118" hits="1" branch="false" />
             <line number="119" hits="1" branch="false" />
-            <line number="123" hits="1" branch="false" />
-            <line number="125" hits="1" branch="false" />
-            <line number="126" hits="1" branch="false" />
+            <line number="120" hits="1" branch="false" />
+            <line number="121" hits="1" branch="false" />
+            <line number="124" hits="1" branch="false" />
             <line number="127" hits="1" branch="false" />
-            <line number="130" hits="1" branch="false" />
-            <line number="133" hits="1" branch="false" />
-            <line number="134" hits="1" branch="false" />
-            <line number="135" hits="1" branch="false" />
-            <line number="138" hits="7" branch="false" />
-            <line number="139" hits="7" branch="false" />
-            <line number="140" hits="7" branch="false" />
-            <line number="141" hits="7" branch="false" />
-            <line number="142" hits="7" branch="false" />
-            <line number="143" hits="7" branch="false" />
-            <line number="144" hits="7" branch="false" />
-            <line number="145" hits="7" branch="false" />
-            <line number="146" hits="7" branch="false" />
-            <line number="147" hits="7" branch="false" />
-            <line number="148" hits="7" branch="false" />
-            <line number="149" hits="7" branch="false" />
-            <line number="150" hits="7" branch="false" />
-            <line number="153" hits="2" branch="false" />
-            <line number="154" hits="2" branch="false" />
-            <line number="155" hits="2" branch="false" />
-            <line number="156" hits="2" branch="false" />
-            <line number="157" hits="2" branch="false" />
-            <line number="158" hits="2" branch="false" />
-            <line number="159" hits="2" branch="false" />
-            <line number="160" hits="2" branch="false" />
-            <line number="161" hits="2" branch="false" />
-            <line number="162" hits="2" branch="false" />
-            <line number="163" hits="2" branch="false" />
-            <line number="164" hits="2" branch="false" />
+            <line number="128" hits="1" branch="false" />
+            <line number="131" hits="1" branch="false" />
+            <line number="132" hits="1" branch="false" />
+            <line number="136" hits="1" branch="false" />
+            <line number="138" hits="1" branch="false" />
+            <line number="141" hits="1" branch="false" />
+            <line number="142" hits="1" branch="false" />
+            <line number="146" hits="1" branch="false" />
+            <line number="148" hits="1" branch="false" />
+            <line number="149" hits="1" branch="false" />
+            <line number="150" hits="1" branch="false" />
+            <line number="153" hits="1" branch="false" />
+            <line number="156" hits="1" branch="false" />
+            <line number="157" hits="1" branch="false" />
+            <line number="160" hits="1" branch="false" />
+            <line number="161" hits="1" branch="false" />
+            <line number="165" hits="1" branch="false" />
+            <line number="167" hits="1" branch="false" />
+            <line number="170" hits="1" branch="false" />
+            <line number="171" hits="1" branch="false" />
+            <line number="174" hits="7" branch="false" />
+            <line number="175" hits="7" branch="false" />
+            <line number="176" hits="7" branch="false" />
+            <line number="177" hits="7" branch="false" />
+            <line number="178" hits="7" branch="false" />
+            <line number="179" hits="7" branch="false" />
+            <line number="180" hits="7" branch="false" />
+            <line number="181" hits="7" branch="false" />
+            <line number="182" hits="7" branch="false" />
+            <line number="183" hits="7" branch="false" />
+            <line number="184" hits="7" branch="false" />
+            <line number="185" hits="7" branch="false" />
+            <line number="186" hits="7" branch="false" />
+            <line number="189" hits="2" branch="false" />
+            <line number="190" hits="2" branch="false" />
+            <line number="191" hits="2" branch="false" />
+            <line number="192" hits="2" branch="false" />
+            <line number="193" hits="2" branch="false" />
+            <line number="194" hits="2" branch="false" />
+            <line number="195" hits="2" branch="false" />
+            <line number="196" hits="2" branch="false" />
+            <line number="197" hits="2" branch="false" />
+            <line number="198" hits="2" branch="false" />
+            <line number="199" hits="2" branch="false" />
+            <line number="200" hits="2" branch="false" />
           </lines>
         </class>
       </classes>
     </package>
-    <package name="review_handler.WebUI" line-rate="0.941176470588235" branch-rate="0.75" complexity="12">
+    <package name="review_handler.WebUI" line-rate="0.941176470588235" branch-rate="1" complexity="12">
       <classes>
         <class name="Program" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.WebUI\Program.cs" line-rate="0.891891891891892" branch-rate="1" complexity="2">
           <methods>
             <method name="&lt;Main&gt;$" signature="(...)" line-rate="0.891891891891892" branch-rate="1" complexity="2">
               <lines>
-                <line number="5" hits="9" branch="false" />
-                <line number="8" hits="9" branch="false" />
-                <line number="10" hits="9" branch="false" />
-                <line number="11" hits="9" branch="false" />
-                <line number="12" hits="9" branch="false" />
-                <line number="13" hits="9" branch="false" />
-                <line number="14" hits="9" branch="false" />
-                <line number="15" hits="9" branch="false" />
-                <line number="16" hits="9" branch="false" />
-                <line number="17" hits="9" branch="false" />
-                <line number="18" hits="9" branch="false" />
-                <line number="19" hits="9" branch="false" />
-                <line number="20" hits="9" branch="false" />
-                <line number="21" hits="18" branch="false" />
-                <line number="23" hits="9" branch="false" />
-                <line number="24" hits="9" branch="false" />
+                <line number="5" hits="11" branch="false" />
+                <line number="8" hits="11" branch="false" />
+                <line number="10" hits="11" branch="false" />
+                <line number="11" hits="11" branch="false" />
+                <line number="12" hits="11" branch="false" />
+                <line number="13" hits="11" branch="false" />
+                <line number="14" hits="11" branch="false" />
+                <line number="15" hits="11" branch="false" />
+                <line number="16" hits="11" branch="false" />
+                <line number="17" hits="11" branch="false" />
+                <line number="18" hits="11" branch="false" />
+                <line number="19" hits="11" branch="false" />
+                <line number="20" hits="11" branch="false" />
+                <line number="21" hits="22" branch="false" />
+                <line number="23" hits="11" branch="false" />
+                <line number="24" hits="11" branch="false" />
                 <line number="25" hits="0" branch="false" />
                 <line number="26" hits="0" branch="false" />
                 <line number="27" hits="0" branch="false" />
                 <line number="28" hits="0" branch="false" />
-                <line number="29" hits="9" branch="false" />
-                <line number="32" hits="9" branch="false" />
-                <line number="33" hits="9" branch="false" />
-                <line number="34" hits="9" branch="false" />
-                <line number="35" hits="9" branch="false" />
-                <line number="36" hits="9" branch="false" />
-                <line number="38" hits="9" branch="false" />
-                <line number="39" hits="9" branch="false" />
-                <line number="42" hits="9" branch="true" condition-coverage="100% (2/2)" />
-                <line number="43" hits="9" branch="false" />
-                <line number="44" hits="9" branch="false" />
-                <line number="45" hits="9" branch="false" />
-                <line number="46" hits="9" branch="false" />
-                <line number="48" hits="9" branch="false" />
-                <line number="50" hits="9" branch="false" />
-                <line number="52" hits="9" branch="false" />
-                <line number="54" hits="9" branch="false" />
+                <line number="29" hits="11" branch="false" />
+                <line number="32" hits="11" branch="false" />
+                <line number="33" hits="11" branch="false" />
+                <line number="34" hits="11" branch="false" />
+                <line number="35" hits="11" branch="false" />
+                <line number="36" hits="11" branch="false" />
+                <line number="38" hits="11" branch="false" />
+                <line number="39" hits="11" branch="false" />
+                <line number="42" hits="11" branch="true" condition-coverage="100% (2/2)" />
+                <line number="43" hits="11" branch="false" />
+                <line number="44" hits="11" branch="false" />
+                <line number="45" hits="11" branch="false" />
+                <line number="46" hits="11" branch="false" />
+                <line number="48" hits="11" branch="false" />
+                <line number="50" hits="11" branch="false" />
+                <line number="52" hits="11" branch="false" />
+                <line number="54" hits="11" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="9" branch="false" />
-            <line number="8" hits="9" branch="false" />
-            <line number="10" hits="9" branch="false" />
-            <line number="11" hits="9" branch="false" />
-            <line number="12" hits="9" branch="false" />
-            <line number="13" hits="9" branch="false" />
-            <line number="14" hits="9" branch="false" />
-            <line number="15" hits="9" branch="false" />
-            <line number="16" hits="9" branch="false" />
-            <line number="17" hits="9" branch="false" />
-            <line number="18" hits="9" branch="false" />
-            <line number="19" hits="9" branch="false" />
-            <line number="20" hits="9" branch="false" />
-            <line number="21" hits="18" branch="false" />
-            <line number="23" hits="9" branch="false" />
-            <line number="24" hits="9" branch="false" />
+            <line number="5" hits="11" branch="false" />
+            <line number="8" hits="11" branch="false" />
+            <line number="10" hits="11" branch="false" />
+            <line number="11" hits="11" branch="false" />
+            <line number="12" hits="11" branch="false" />
+            <line number="13" hits="11" branch="false" />
+            <line number="14" hits="11" branch="false" />
+            <line number="15" hits="11" branch="false" />
+            <line number="16" hits="11" branch="false" />
+            <line number="17" hits="11" branch="false" />
+            <line number="18" hits="11" branch="false" />
+            <line number="19" hits="11" branch="false" />
+            <line number="20" hits="11" branch="false" />
+            <line number="21" hits="22" branch="false" />
+            <line number="23" hits="11" branch="false" />
+            <line number="24" hits="11" branch="false" />
             <line number="25" hits="0" branch="false" />
             <line number="26" hits="0" branch="false" />
             <line number="27" hits="0" branch="false" />
             <line number="28" hits="0" branch="false" />
-            <line number="29" hits="9" branch="false" />
-            <line number="32" hits="9" branch="false" />
-            <line number="33" hits="9" branch="false" />
-            <line number="34" hits="9" branch="false" />
-            <line number="35" hits="9" branch="false" />
-            <line number="36" hits="9" branch="false" />
-            <line number="38" hits="9" branch="false" />
-            <line number="39" hits="9" branch="false" />
-            <line number="42" hits="9" branch="true" condition-coverage="100% (2/2)" />
-            <line number="43" hits="9" branch="false" />
-            <line number="44" hits="9" branch="false" />
-            <line number="45" hits="9" branch="false" />
-            <line number="46" hits="9" branch="false" />
-            <line number="48" hits="9" branch="false" />
-            <line number="50" hits="9" branch="false" />
-            <line number="52" hits="9" branch="false" />
-            <line number="54" hits="9" branch="false" />
+            <line number="29" hits="11" branch="false" />
+            <line number="32" hits="11" branch="false" />
+            <line number="33" hits="11" branch="false" />
+            <line number="34" hits="11" branch="false" />
+            <line number="35" hits="11" branch="false" />
+            <line number="36" hits="11" branch="false" />
+            <line number="38" hits="11" branch="false" />
+            <line number="39" hits="11" branch="false" />
+            <line number="42" hits="11" branch="true" condition-coverage="100% (2/2)" />
+            <line number="43" hits="11" branch="false" />
+            <line number="44" hits="11" branch="false" />
+            <line number="45" hits="11" branch="false" />
+            <line number="46" hits="11" branch="false" />
+            <line number="48" hits="11" branch="false" />
+            <line number="50" hits="11" branch="false" />
+            <line number="52" hits="11" branch="false" />
+            <line number="54" hits="11" branch="false" />
           </lines>
         </class>
-        <class name="review_handler.API.Controllers.ReviewController" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.WebUI\Controllers\ReviewController.cs" line-rate="1" branch-rate="0.666666666666667" complexity="10">
+        <class name="review_handler.API.Controllers.ReviewController" filename="D:\Documents\GitHub\MovieMood\review_handler\review_handler.WebUI\Controllers\ReviewController.cs" line-rate="1" branch-rate="1" complexity="10">
           <methods>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="28" branch="false" />
+                <line number="15" hits="42" branch="false" />
               </lines>
             </method>
             <method name="Create" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -1946,30 +1953,30 @@
             </method>
             <method name="DeleteReview" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="61" hits="2" branch="false" />
-                <line number="62" hits="2" branch="false" />
-                <line number="63" hits="2" branch="false" />
-                <line number="64" hits="2" branch="false" />
+                <line number="61" hits="7" branch="false" />
+                <line number="62" hits="7" branch="false" />
+                <line number="63" hits="7" branch="false" />
+                <line number="64" hits="7" branch="false" />
               </lines>
             </method>
-            <method name="GetAllOfMovie" signature="()" line-rate="1" branch-rate="0.5" complexity="2">
+            <method name="GetAllOfMovie" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="44" hits="1" branch="false" />
-                <line number="45" hits="1" branch="false" />
-                <line number="46" hits="1" branch="true" condition-coverage="50% (1/2)" />
-                <line number="47" hits="1" branch="false" />
-                <line number="48" hits="1" branch="false" />
-                <line number="49" hits="1" branch="false" />
+                <line number="44" hits="2" branch="false" />
+                <line number="45" hits="2" branch="false" />
+                <line number="46" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="47" hits="2" branch="false" />
+                <line number="48" hits="2" branch="false" />
+                <line number="49" hits="2" branch="false" />
               </lines>
             </method>
-            <method name="GetAllOfUser" signature="()" line-rate="1" branch-rate="0.5" complexity="2">
+            <method name="GetAllOfUser" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="35" hits="1" branch="false" />
-                <line number="36" hits="1" branch="false" />
-                <line number="37" hits="1" branch="true" condition-coverage="50% (1/2)" />
-                <line number="38" hits="1" branch="false" />
-                <line number="39" hits="1" branch="false" />
-                <line number="40" hits="1" branch="false" />
+                <line number="35" hits="2" branch="false" />
+                <line number="36" hits="2" branch="false" />
+                <line number="37" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="38" hits="2" branch="false" />
+                <line number="39" hits="2" branch="false" />
+                <line number="40" hits="2" branch="false" />
               </lines>
             </method>
             <method name="GetById" signature="()" line-rate="1" branch-rate="1" complexity="2">
@@ -1992,7 +1999,7 @@
             </method>
           </methods>
           <lines>
-            <line number="15" hits="28" branch="false" />
+            <line number="15" hits="42" branch="false" />
             <line number="19" hits="6" branch="false" />
             <line number="20" hits="6" branch="false" />
             <line number="21" hits="6" branch="false" />
@@ -2003,26 +2010,26 @@
             <line number="29" hits="2" branch="false" />
             <line number="30" hits="2" branch="false" />
             <line number="31" hits="2" branch="false" />
-            <line number="35" hits="1" branch="false" />
-            <line number="36" hits="1" branch="false" />
-            <line number="37" hits="1" branch="true" condition-coverage="50% (1/2)" />
-            <line number="38" hits="1" branch="false" />
-            <line number="39" hits="1" branch="false" />
-            <line number="40" hits="1" branch="false" />
-            <line number="44" hits="1" branch="false" />
-            <line number="45" hits="1" branch="false" />
-            <line number="46" hits="1" branch="true" condition-coverage="50% (1/2)" />
-            <line number="47" hits="1" branch="false" />
-            <line number="48" hits="1" branch="false" />
-            <line number="49" hits="1" branch="false" />
+            <line number="35" hits="2" branch="false" />
+            <line number="36" hits="2" branch="false" />
+            <line number="37" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="38" hits="2" branch="false" />
+            <line number="39" hits="2" branch="false" />
+            <line number="40" hits="2" branch="false" />
+            <line number="44" hits="2" branch="false" />
+            <line number="45" hits="2" branch="false" />
+            <line number="46" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="47" hits="2" branch="false" />
+            <line number="48" hits="2" branch="false" />
+            <line number="49" hits="2" branch="false" />
             <line number="53" hits="2" branch="false" />
             <line number="54" hits="2" branch="false" />
             <line number="55" hits="2" branch="false" />
             <line number="56" hits="2" branch="false" />
-            <line number="61" hits="2" branch="false" />
-            <line number="62" hits="2" branch="false" />
-            <line number="63" hits="2" branch="false" />
-            <line number="64" hits="2" branch="false" />
+            <line number="61" hits="7" branch="false" />
+            <line number="62" hits="7" branch="false" />
+            <line number="63" hits="7" branch="false" />
+            <line number="64" hits="7" branch="false" />
           </lines>
         </class>
       </classes>

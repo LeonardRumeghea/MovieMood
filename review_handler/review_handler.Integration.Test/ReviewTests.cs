@@ -17,6 +17,10 @@ namespace review_handler.Integration.Tests
             // Assert
             response.EnsureSuccessStatusCode();
             response.StatusCode.Should().Be(HttpStatusCode.Created);
+
+            //CleanUp
+            var review = await response.Content.ReadFromJsonAsync<ReviewResponse>();
+            await HttpClient.DeleteAsync($"{ApiURL}/{review.Id}");
         }
 
         [Fact]
@@ -33,6 +37,9 @@ namespace review_handler.Integration.Tests
             // Assert
             response.EnsureSuccessStatusCode();
             response.StatusCode.Should().Be(HttpStatusCode.OK);
+
+            //CleanUp
+            await HttpClient.DeleteAsync($"{ApiURL}/{reviewResponse.Id}");
         }
 
         [Fact]
@@ -87,6 +94,9 @@ namespace review_handler.Integration.Tests
             // Assert
             response.EnsureSuccessStatusCode();
             response.StatusCode.Should().Be(HttpStatusCode.Created);
+
+            //CleanUp
+            await HttpClient.DeleteAsync($"{ApiURL}/{reviewResponse.Id}");
         }
 
         [Fact]
@@ -116,6 +126,19 @@ namespace review_handler.Integration.Tests
             // Assert
             response.EnsureSuccessStatusCode();
             response.StatusCode.Should().Be(HttpStatusCode.OK);
+
+            //CleanUp
+            await HttpClient.DeleteAsync($"{ApiURL}/{reviewResponse.Id}");
+        }
+
+        [Fact]
+        public async Task When_GetAllReviewsOfUserWithInvalidId_Then_ShouldReturnNotFound()
+        {
+            // Act
+            var response = await HttpClient.GetAsync($"{ApiURL}/user/{Guid.NewGuid()}");
+
+            // Assert
+            response.StatusCode.Should().Be(HttpStatusCode.NotFound);
         }
 
         [Fact]
@@ -132,6 +155,19 @@ namespace review_handler.Integration.Tests
             // Assert
             response.EnsureSuccessStatusCode();
             response.StatusCode.Should().Be(HttpStatusCode.OK);
+
+            //CleanUp
+            await HttpClient.DeleteAsync($"{ApiURL}/{reviewResponse.Id}");
+        }
+
+        [Fact]
+        public async Task When_GetAllReviewsOfMovieWithInvalidId_Then_ShouldReturnNotFound()
+        {
+            // Act
+            var response = await HttpClient.GetAsync($"{ApiURL}/movie/{Guid.NewGuid()}");
+
+            // Assert
+            response.StatusCode.Should().Be(HttpStatusCode.NotFound);
         }
 
         private static CreateReviewCommand CreateReviewSUT()

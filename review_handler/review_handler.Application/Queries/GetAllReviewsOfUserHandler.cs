@@ -14,9 +14,13 @@ namespace review_handler.Application.Queries
 
         public async Task<ResultOfEntity<List<ReviewResponse>>> Handle(GetAllReviewsOfUser request, CancellationToken cancellationToken)
         {
-            var userEntity = await _unitOfWork.UserRepository.GetByIdAsync(request.UserId);
+            var reviewEntities = (await _unitOfWork.ReviewRepository.GetAllAsync()).Where(r => r.UserId == request.UserId).ToList();
 
-            var reviewEntities = (await _unitOfWork.ReviewRepository.GetAllAsync()).Where(r => r.MovieId == request.UserId).ToList();
+            if (reviewEntities.Count == 0)
+            {
+                return ResultOfEntity<List<ReviewResponse>>
+                    .Failure(HttpStatusCode.NotFound, $"No reviews found for user with id {request.UserId}.");
+            }
 
             return ResultOfEntity<List<ReviewResponse>>.Success(
                 HttpStatusCode.OK,

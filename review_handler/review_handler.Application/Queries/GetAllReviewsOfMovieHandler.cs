@@ -15,13 +15,16 @@ namespace review_handler.Application.Queries
 
         public async Task<ResultOfEntity<List<ReviewResponse>>> Handle(GetAllReviewsOfMovie request, CancellationToken cancellationToken)
         {
-            var movieEntity = await _unitOfWork.MovieRepository.GetByIdAsync(request.MovieId);
-
             var reviews = (await _unitOfWork.ReviewRepository.GetAllAsync()).Where(x => x.MovieId == request.MovieId).ToList();
+
+            if (reviews.Count == 0)
+            {
+                return ResultOfEntity<List<ReviewResponse>>.Failure(HttpStatusCode.NotFound, $"No reviews found for movie with id {request.MovieId}.");
+            }
 
             return ResultOfEntity<List<ReviewResponse>>.Success(
                 HttpStatusCode.OK,
-                ReviewMapper.Mapper.Map<List<ReviewResponse>>(movieEntity)
+                ReviewMapper.Mapper.Map<List<ReviewResponse>>(reviews)
             ) ;
         }
     }
