@@ -11,41 +11,11 @@ namespace review_handler.Infrastructure.Data
     {
         private readonly DatabaseContext _context;
 
-        private IActorRepository actorRepository;
-        private IAwardRepository awardRepository;
-        private IDirectorRepository directorRepository;
         private IMovieRepository movieRepository;
         private IReviewRepository reviewRepository;
         private IUserRepository userRepository;
 
         public UnitOfWork(DatabaseContext context) => _context = context;
-
-        public IRepository<Actor> ActorRepository
-        {
-            get
-            {
-                actorRepository ??= new ActorRepository(_context);
-                return actorRepository;
-            }
-        }
-
-        public IRepository<Award> AwardRepository
-        {
-            get
-            {
-                awardRepository ??= new AwardRepository(_context);
-                return awardRepository;
-            }
-        }
-
-        public IRepository<Director> DirectorRepository
-        {
-            get
-            {
-                directorRepository ??= new DirectorRepository(_context);
-                return directorRepository;
-            }
-        }
 
         public IRepository<Movie> MovieRepository
         {

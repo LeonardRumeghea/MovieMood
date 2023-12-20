@@ -17,9 +17,6 @@ namespace review_handler.Infrastructure
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
             
-            services.AddScoped<IActorRepository, ActorRepository>();
-            services.AddScoped<IAwardRepository, AwardRepository>();
-            services.AddScoped<IDirectorRepository, DirectorRepository>();
             services.AddScoped<IMovieRepository, MovieRepository>();
             services.AddScoped<IReviewRepository, ReviewRepository>();
             services.AddScoped<IUserRepository, UserRepository>();

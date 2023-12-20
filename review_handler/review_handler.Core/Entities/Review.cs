@@ -1,4 +1,6 @@
-﻿namespace review_handler.Core.Entities
+﻿using review_handler.Core.Helpers;
+
+namespace review_handler.Core.Entities
 {
     public class Review
     {
@@ -11,5 +13,18 @@
         public int? GenreRating { get; set; }
         public int? SciptRating { get; set; }
         public string? ReviewText { get; set; }
+
+        public static ResultOfEntity<Review> Create(Guid movieId, Guid userId, int movieRating)
+        {
+            var review = new Review
+            {
+                Id = new Guid(),
+                MovieId = movieId,
+                UserId = userId,
+                MovieRating = movieRating
+            };
+
+            return ResultOfEntity<Review>.Success(review);
+        }
     }
 }

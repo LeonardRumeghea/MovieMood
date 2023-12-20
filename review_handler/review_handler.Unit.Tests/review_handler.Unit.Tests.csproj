@@ -20,4 +20,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\review_handler.Core\review_handler.Core.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1752,6 +1752,16 @@
         "build": {
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "review_handler.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/review_handler.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/review_handler.Core.dll": {}
+        }
       }
     }
   },
@@ -5635,6 +5645,11 @@
         "xunit.runner.visualstudio.2.5.5.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "review_handler.Core/1.0.0": {
+      "type": "project",
+      "path": "../review_handler.Core/review_handler.Core.csproj",
+      "msbuildProject": "../review_handler.Core/review_handler.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5642,6 +5657,7 @@
       "FluentAssertions >= 6.12.0",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "coverlet.collector >= 6.0.0",
+      "review_handler.Core >= 1.0.0",
       "xunit >= 2.6.3",
       "xunit.runner.visualstudio >= 2.5.5"
     ]
@@ -5677,7 +5693,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj": {
+              "projectPath": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

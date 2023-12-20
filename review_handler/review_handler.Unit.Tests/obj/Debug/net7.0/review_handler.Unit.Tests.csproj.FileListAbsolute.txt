@@ -101,3 +101,6 @@ D:\Documents\GitHub\MovieMood\review_handler\review_handler.Unit.Tests\obj\Debug
 D:\Documents\GitHub\MovieMood\review_handler\review_handler.Unit.Tests\obj\Debug\net7.0\review_handler.Unit.Tests.pdb
 D:\Documents\GitHub\MovieMood\review_handler\review_handler.Unit.Tests\obj\Debug\net7.0\review_handler.Unit.Tests.genruntimeconfig.cache
 D:\Documents\GitHub\MovieMood\review_handler\review_handler.Unit.Tests\obj\Debug\net7.0\ref\review_handler.Unit.Tests.dll
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Unit.Tests\bin\Debug\net7.0\CoverletSourceRootsMapping_review_handler.Unit.Tests
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Unit.Tests\bin\Debug\net7.0\review_handler.Core.dll
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Unit.Tests\bin\Debug\net7.0\review_handler.Core.pdb

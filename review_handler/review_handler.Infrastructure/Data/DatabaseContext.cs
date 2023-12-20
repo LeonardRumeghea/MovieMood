@@ -21,9 +21,6 @@ namespace review_handler.Infrastructure.Data
 
         public DbSet<User> User => Set<User>();
         public DbSet<Review> Review => Set<Review>();
-        public DbSet<Actor> Actors => Set<Actor>();
-        public DbSet<Award> Awards => Set<Award>();
-        public DbSet<Director> Directors => Set<Director>();
         public DbSet<Movie> Movies => Set<Movie>();
 
         public void Save() => SaveChanges();

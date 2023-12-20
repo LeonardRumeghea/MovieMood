@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.7036" branch-rate="0.35" version="1.9" timestamp="1702805477" lines-covered="368" lines-valid="523" branches-covered="21" branches-valid="60">
+<coverage line-rate="0.7934" branch-rate="0.8076000000000001" version="1.9" timestamp="1703048545" lines-covered="365" lines-valid="460" branches-covered="21" branches-valid="26">
   <sources>
     <source>D:\Documents\GitHub\MovieMood\review_handler\</source>
     <source>C:\</source>
@@ -697,7 +697,7 @@
         </class>
       </classes>
     </package>
-    <package name="review_handler.Core" line-rate="0.1567" branch-rate="0" complexity="99">
+    <package name="review_handler.Core" line-rate="0.22820000000000001" branch-rate="1" complexity="50">
       <classes>
         <class name="review_handler.Core.Helpers.Result" filename="review_handler.Core\Helpers\Result.cs" line-rate="0.5555" branch-rate="1" complexity="9">
           <methods>
@@ -819,111 +819,7 @@
             <line number="21" hits="3" branch="False" />
           </lines>
         </class>
-        <class name="review_handler.Core.Entities.Actor" filename="review_handler.Core\Entities\Actor.cs" line-rate="0" branch-rate="1" complexity="4">
-          <methods>
-            <method name="get_Filmography" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="5" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Awards" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="6" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="(System.String,System.String,System.DateTime,System.String,System.String,System.Collections.Generic.List`1&lt;review_handler.Core.Entities.Movie&gt;,System.Collections.Generic.List`1&lt;review_handler.Core.Entities.Award&gt;)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="9" hits="0" branch="False" />
-                <line number="10" hits="0" branch="False" />
-                <line number="11" hits="0" branch="False" />
-                <line number="12" hits="0" branch="False" />
-                <line number="13" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="15" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="5" hits="0" branch="False" />
-            <line number="6" hits="0" branch="False" />
-            <line number="9" hits="0" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="review_handler.Core.Entities.Award" filename="review_handler.Core\Entities\Award.cs" line-rate="0" branch-rate="1" complexity="5">
-          <methods>
-            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="7" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Title" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="8" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Date" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="9" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Category" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="10" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Description" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="11" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="7" hits="0" branch="False" />
-            <line number="8" hits="0" branch="False" />
-            <line number="9" hits="0" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="review_handler.Core.Entities.Director" filename="review_handler.Core\Entities\Director.cs" line-rate="0" branch-rate="1" complexity="3">
-          <methods>
-            <method name="get_Filmography" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="7" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="(System.String,System.String,System.DateTime,System.String,System.String,System.Collections.Generic.List`1&lt;review_handler.Core.Entities.Movie&gt;,System.Collections.Generic.List`1&lt;review_handler.Core.Enums.Genre&gt;)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="12" hits="0" branch="False" />
-                <line number="13" hits="0" branch="False" />
-                <line number="14" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="18" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="7" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="18" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="review_handler.Core.Entities.Movie" filename="review_handler.Core\Entities\Movie.cs" line-rate="0" branch-rate="1" complexity="6">
+        <class name="review_handler.Core.Entities.Movie" filename="review_handler.Core\Entities\Movie.cs" line-rate="0" branch-rate="1" complexity="4">
           <methods>
             <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -940,19 +836,9 @@
                 <line number="7" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_Director" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="8" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Cast" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="9" hits="0" branch="False" />
-              </lines>
-            </method>
             <method name="get_Raiting" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="0" branch="False" />
+                <line number="9" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
@@ -960,225 +846,91 @@
             <line number="5" hits="0" branch="False" />
             <line number="6" hits="0" branch="False" />
             <line number="7" hits="0" branch="False" />
-            <line number="8" hits="0" branch="False" />
             <line number="9" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="review_handler.Core.Entities.Person" filename="review_handler.Core\Entities\Person.cs" line-rate="0" branch-rate="0" complexity="36">
+        <class name="review_handler.Core.Entities.Review" filename="review_handler.Core\Entities\Review.cs" line-rate="0.4736" branch-rate="1" complexity="10">
           <methods>
-            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="0" branch="False" />
+                <line number="7" hits="9" branch="False" />
               </lines>
             </method>
-            <method name="get_FirstName" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_MovieId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="0" branch="False" />
+                <line number="8" hits="16" branch="False" />
               </lines>
             </method>
-            <method name="get_LastName" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="0" branch="False" />
+                <line number="9" hits="16" branch="False" />
               </lines>
             </method>
-            <method name="get_DateOfBirth" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_MovieRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="0" branch="False" />
+                <line number="10" hits="16" branch="False" />
               </lines>
             </method>
-            <method name="get_Biography" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_CastRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="0" branch="False" />
+                <line number="11" hits="16" branch="False" />
               </lines>
             </method>
-            <method name="get_Nationality" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_DirectorRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="0" branch="False" />
+                <line number="12" hits="16" branch="False" />
               </lines>
             </method>
-            <method name="CanCreatePerson" signature="(System.String,System.String,System.String,System.String,System.String)" line-rate="0" branch-rate="0" complexity="28">
+            <method name="get_GenreRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="27" hits="0" branch="False" />
-                <line number="28" hits="0" branch="True" condition-coverage="0% (0/8)">
-                  <conditions>
-                    <condition number="2" type="jump" coverage="0%" />
-                    <condition number="15" type="jump" coverage="0%" />
-                    <condition number="24" type="jump" coverage="0%" />
-                    <condition number="41" type="jump" coverage="0%" />
-                  </conditions>
-                </line>
-                <line number="29" hits="0" branch="False" />
-                <line number="30" hits="0" branch="False" />
-                <line number="33" hits="0" branch="True" condition-coverage="0% (0/8)">
-                  <conditions>
-                    <condition number="61" type="jump" coverage="0%" />
-                    <condition number="74" type="jump" coverage="0%" />
-                    <condition number="83" type="jump" coverage="0%" />
-                    <condition number="100" type="jump" coverage="0%" />
-                  </conditions>
-                </line>
-                <line number="34" hits="0" branch="False" />
-                <line number="35" hits="0" branch="False" />
-                <line number="39" hits="0" branch="True" condition-coverage="0% (0/4)">
-                  <conditions>
-                    <condition number="124" type="jump" coverage="0%" />
-                    <condition number="144" type="jump" coverage="0%" />
-                  </conditions>
-                </line>
-                <line number="40" hits="0" branch="False" />
-                <line number="41" hits="0" branch="False" />
-                <line number="44" hits="0" branch="True" condition-coverage="0% (0/8)">
-                  <conditions>
-                    <condition number="161" type="jump" coverage="0%" />
-                    <condition number="174" type="jump" coverage="0%" />
-                    <condition number="183" type="jump" coverage="0%" />
-                    <condition number="205" type="jump" coverage="0%" />
-                  </conditions>
-                </line>
-                <line number="45" hits="0" branch="False" />
-                <line number="46" hits="0" branch="False" />
-                <line number="49" hits="0" branch="False" />
-                <line number="50" hits="0" branch="False" />
+                <line number="13" hits="16" branch="False" />
               </lines>
             </method>
-            <method name=".ctor" signature="(System.String,System.String,System.DateTime,System.String,System.String)" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_SciptRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="0" branch="False" />
-                <line number="15" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
+                <line number="14" hits="16" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ReviewText" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="16" branch="False" />
+              </lines>
+            </method>
+            <method name="Create" signature="(System.Guid,System.Guid,System.Int32)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
                 <line number="18" hits="0" branch="False" />
                 <line number="19" hits="0" branch="False" />
                 <line number="20" hits="0" branch="False" />
                 <line number="21" hits="0" branch="False" />
                 <line number="22" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
+                <line number="23" hits="0" branch="False" />
                 <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="7" hits="0" branch="False" />
-            <line number="8" hits="0" branch="False" />
-            <line number="9" hits="0" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
-            <line number="27" hits="0" branch="False" />
-            <line number="28" hits="0" branch="True" condition-coverage="0% (0/8)">
-              <conditions>
-                <condition number="2" type="jump" coverage="0%" />
-                <condition number="15" type="jump" coverage="0%" />
-                <condition number="24" type="jump" coverage="0%" />
-                <condition number="41" type="jump" coverage="0%" />
-              </conditions>
-            </line>
-            <line number="29" hits="0" branch="False" />
-            <line number="30" hits="0" branch="False" />
-            <line number="33" hits="0" branch="True" condition-coverage="0% (0/8)">
-              <conditions>
-                <condition number="61" type="jump" coverage="0%" />
-                <condition number="74" type="jump" coverage="0%" />
-                <condition number="83" type="jump" coverage="0%" />
-                <condition number="100" type="jump" coverage="0%" />
-              </conditions>
-            </line>
-            <line number="34" hits="0" branch="False" />
-            <line number="35" hits="0" branch="False" />
-            <line number="39" hits="0" branch="True" condition-coverage="0% (0/4)">
-              <conditions>
-                <condition number="124" type="jump" coverage="0%" />
-                <condition number="144" type="jump" coverage="0%" />
-              </conditions>
-            </line>
-            <line number="40" hits="0" branch="False" />
-            <line number="41" hits="0" branch="False" />
-            <line number="44" hits="0" branch="True" condition-coverage="0% (0/8)">
-              <conditions>
-                <condition number="161" type="jump" coverage="0%" />
-                <condition number="174" type="jump" coverage="0%" />
-                <condition number="183" type="jump" coverage="0%" />
-                <condition number="205" type="jump" coverage="0%" />
-              </conditions>
-            </line>
-            <line number="45" hits="0" branch="False" />
-            <line number="46" hits="0" branch="False" />
-            <line number="49" hits="0" branch="False" />
-            <line number="50" hits="0" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
-            <line number="18" hits="0" branch="False" />
-            <line number="19" hits="0" branch="False" />
-            <line number="20" hits="0" branch="False" />
-            <line number="21" hits="0" branch="False" />
-            <line number="22" hits="0" branch="False" />
-            <line number="24" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="review_handler.Core.Entities.Review" filename="review_handler.Core\Entities\Review.cs" line-rate="1" branch-rate="1" complexity="9">
-          <methods>
-            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="5" hits="9" branch="False" />
-              </lines>
-            </method>
-            <method name="get_MovieId" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="6" hits="16" branch="False" />
-              </lines>
-            </method>
-            <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="7" hits="16" branch="False" />
-              </lines>
-            </method>
-            <method name="get_MovieRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="8" hits="16" branch="False" />
-              </lines>
-            </method>
-            <method name="get_CastRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="9" hits="16" branch="False" />
-              </lines>
-            </method>
-            <method name="get_DirectorRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="10" hits="16" branch="False" />
-              </lines>
-            </method>
-            <method name="get_GenreRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="11" hits="16" branch="False" />
-              </lines>
-            </method>
-            <method name="get_SciptRating" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="12" hits="16" branch="False" />
-              </lines>
-            </method>
-            <method name="get_ReviewText" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="13" hits="16" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="5" hits="9" branch="False" />
-            <line number="6" hits="16" branch="False" />
-            <line number="7" hits="16" branch="False" />
+            <line number="7" hits="9" branch="False" />
             <line number="8" hits="16" branch="False" />
             <line number="9" hits="16" branch="False" />
             <line number="10" hits="16" branch="False" />
             <line number="11" hits="16" branch="False" />
             <line number="12" hits="16" branch="False" />
             <line number="13" hits="16" branch="False" />
+            <line number="14" hits="16" branch="False" />
+            <line number="15" hits="16" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
           </lines>
         </class>
         <class name="review_handler.Core.Entities.User" filename="review_handler.Core\Entities\User.cs" line-rate="0" branch-rate="1" complexity="6">
@@ -1375,7 +1127,7 @@
         </class>
       </classes>
     </package>
-    <package name="review_handler.Infrastructure" line-rate="0.5478999999999999" branch-rate="0.1666" complexity="36">
+    <package name="review_handler.Infrastructure" line-rate="0.7115" branch-rate="0.3333" complexity="24">
       <classes>
         <class name="review_handler.Infrastructure.ConfigureServices" filename="review_handler.Infrastructure\ConfigureServices.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
@@ -1387,13 +1139,10 @@
                 <line number="20" hits="11" branch="False" />
                 <line number="21" hits="11" branch="False" />
                 <line number="22" hits="11" branch="False" />
-                <line number="23" hits="11" branch="False" />
                 <line number="24" hits="11" branch="False" />
-                <line number="25" hits="11" branch="False" />
+                <line number="25" hits="22" branch="False" />
                 <line number="27" hits="11" branch="False" />
-                <line number="28" hits="22" branch="False" />
-                <line number="30" hits="11" branch="False" />
-                <line number="31" hits="11" branch="False" />
+                <line number="28" hits="11" branch="False" />
               </lines>
             </method>
           </methods>
@@ -1404,49 +1153,10 @@
             <line number="20" hits="11" branch="False" />
             <line number="21" hits="11" branch="False" />
             <line number="22" hits="11" branch="False" />
-            <line number="23" hits="11" branch="False" />
             <line number="24" hits="11" branch="False" />
-            <line number="25" hits="11" branch="False" />
+            <line number="25" hits="22" branch="False" />
             <line number="27" hits="11" branch="False" />
-            <line number="28" hits="22" branch="False" />
-            <line number="30" hits="11" branch="False" />
-            <line number="31" hits="11" branch="False" />
-          </lines>
-        </class>
-        <class name="review_handler.Infrastructure.Repositories.ActorRepository" filename="review_handler.Infrastructure\Repositories\ActorRepository.cs" line-rate="0" branch-rate="1" complexity="1">
-          <methods>
-            <method name=".ctor" signature="(review_handler.Infrastructure.Data.DatabaseContext)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="10" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="10" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="review_handler.Infrastructure.Repositories.AwardRepository" filename="review_handler.Infrastructure\Repositories\AwardRepository.cs" line-rate="0" branch-rate="1" complexity="1">
-          <methods>
-            <method name=".ctor" signature="(review_handler.Infrastructure.Data.DatabaseContext)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="10" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="10" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="review_handler.Infrastructure.Repositories.DirectorRepository" filename="review_handler.Infrastructure\Repositories\DirectorRepository.cs" line-rate="0" branch-rate="1" complexity="1">
-          <methods>
-            <method name=".ctor" signature="(review_handler.Infrastructure.Data.DatabaseContext)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="10" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="10" hits="0" branch="False" />
+            <line number="28" hits="11" branch="False" />
           </lines>
         </class>
         <class name="review_handler.Infrastructure.Repositories.MovieRepository" filename="review_handler.Infrastructure\Repositories\MovieRepository.cs" line-rate="0" branch-rate="1" complexity="1">
@@ -1589,7 +1299,7 @@
             <line number="37" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="review_handler.Infrastructure.Data.DatabaseContext" filename="review_handler.Infrastructure\Data\DatabaseContext.cs" line-rate="0.3636" branch-rate="1" complexity="8">
+        <class name="review_handler.Infrastructure.Data.DatabaseContext" filename="review_handler.Infrastructure\Data\DatabaseContext.cs" line-rate="0.5" branch-rate="1" complexity="5">
           <methods>
             <method name="get_User" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1601,29 +1311,14 @@
                 <line number="23" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_Actors" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Movies" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
                 <line number="24" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_Awards" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="25" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Directors" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="26" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Movies" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="27" hits="0" branch="False" />
-              </lines>
-            </method>
             <method name="Save" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="29" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(Microsoft.EntityFrameworkCore.DbContextOptions)" line-rate="1" branch-rate="1" complexity="1">
@@ -1639,158 +1334,95 @@
             <line number="22" hits="0" branch="False" />
             <line number="23" hits="0" branch="False" />
             <line number="24" hits="0" branch="False" />
-            <line number="25" hits="0" branch="False" />
             <line number="26" hits="0" branch="False" />
-            <line number="27" hits="0" branch="False" />
-            <line number="29" hits="0" branch="False" />
             <line number="17" hits="11" branch="False" />
             <line number="18" hits="11" branch="False" />
             <line number="19" hits="11" branch="False" />
             <line number="20" hits="11" branch="False" />
           </lines>
         </class>
-        <class name="review_handler.Infrastructure.Data.UnitOfWork" filename="review_handler.Infrastructure\Data\UnitOfWork.cs" line-rate="0.2" branch-rate="0.1666" complexity="13">
+        <class name="review_handler.Infrastructure.Data.UnitOfWork" filename="review_handler.Infrastructure\Data\UnitOfWork.cs" line-rate="0.3846" branch-rate="0.3333" complexity="7">
           <methods>
-            <method name="get_ActorRepository" signature="()" line-rate="0" branch-rate="0" complexity="2">
-              <lines>
-                <line number="26" hits="0" branch="False" />
-                <line number="27" hits="0" branch="True" condition-coverage="0% (0/2)">
-                  <conditions>
-                    <condition number="7" type="jump" coverage="0%" />
-                  </conditions>
-                </line>
-                <line number="28" hits="0" branch="False" />
-                <line number="29" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_AwardRepository" signature="()" line-rate="0" branch-rate="0" complexity="2">
-              <lines>
-                <line number="35" hits="0" branch="False" />
-                <line number="36" hits="0" branch="True" condition-coverage="0% (0/2)">
-                  <conditions>
-                    <condition number="7" type="jump" coverage="0%" />
-                  </conditions>
-                </line>
-                <line number="37" hits="0" branch="False" />
-                <line number="38" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_DirectorRepository" signature="()" line-rate="0" branch-rate="0" complexity="2">
-              <lines>
-                <line number="44" hits="0" branch="False" />
-                <line number="45" hits="0" branch="True" condition-coverage="0% (0/2)">
-                  <conditions>
-                    <condition number="7" type="jump" coverage="0%" />
-                  </conditions>
-                </line>
-                <line number="46" hits="0" branch="False" />
-                <line number="47" hits="0" branch="False" />
-              </lines>
-            </method>
             <method name="get_MovieRepository" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="53" hits="0" branch="False" />
-                <line number="54" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
                     <condition number="7" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="55" hits="0" branch="False" />
-                <line number="56" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
               </lines>
             </method>
             <method name="get_ReviewRepository" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="62" hits="28" branch="False" />
-                <line number="63" hits="28" branch="True" condition-coverage="100% (2/2)">
+                <line number="32" hits="28" branch="False" />
+                <line number="33" hits="28" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="7" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="64" hits="28" branch="False" />
-                <line number="65" hits="28" branch="False" />
+                <line number="34" hits="28" branch="False" />
+                <line number="35" hits="28" branch="False" />
               </lines>
             </method>
             <method name="get_UserRepository" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="71" hits="0" branch="False" />
-                <line number="72" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
                     <condition number="7" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="73" hits="0" branch="False" />
-                <line number="74" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(review_handler.Infrastructure.Data.DatabaseContext)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="42" branch="False" />
+                <line number="18" hits="42" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="7" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="25" hits="0" branch="False" />
             <line number="26" hits="0" branch="False" />
-            <line number="27" hits="0" branch="True" condition-coverage="0% (0/2)">
-              <conditions>
-                <condition number="7" type="jump" coverage="0%" />
-              </conditions>
-            </line>
-            <line number="28" hits="0" branch="False" />
-            <line number="29" hits="0" branch="False" />
-            <line number="35" hits="0" branch="False" />
-            <line number="36" hits="0" branch="True" condition-coverage="0% (0/2)">
-              <conditions>
-                <condition number="7" type="jump" coverage="0%" />
-              </conditions>
-            </line>
-            <line number="37" hits="0" branch="False" />
-            <line number="38" hits="0" branch="False" />
-            <line number="44" hits="0" branch="False" />
-            <line number="45" hits="0" branch="True" condition-coverage="0% (0/2)">
-              <conditions>
-                <condition number="7" type="jump" coverage="0%" />
-              </conditions>
-            </line>
-            <line number="46" hits="0" branch="False" />
-            <line number="47" hits="0" branch="False" />
-            <line number="53" hits="0" branch="False" />
-            <line number="54" hits="0" branch="True" condition-coverage="0% (0/2)">
-              <conditions>
-                <condition number="7" type="jump" coverage="0%" />
-              </conditions>
-            </line>
-            <line number="55" hits="0" branch="False" />
-            <line number="56" hits="0" branch="False" />
-            <line number="62" hits="28" branch="False" />
-            <line number="63" hits="28" branch="True" condition-coverage="100% (2/2)">
+            <line number="32" hits="28" branch="False" />
+            <line number="33" hits="28" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="7" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="64" hits="28" branch="False" />
-            <line number="65" hits="28" branch="False" />
-            <line number="71" hits="0" branch="False" />
-            <line number="72" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="34" hits="28" branch="False" />
+            <line number="35" hits="28" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
                 <condition number="7" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="73" hits="0" branch="False" />
-            <line number="74" hits="0" branch="False" />
-            <line number="21" hits="42" branch="False" />
+            <line number="43" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="18" hits="42" branch="False" />
           </lines>
         </class>
-        <class name="review_handler.Infrastructure.Data.UnitOfWork/&lt;SaveChanges&gt;d__20" filename="review_handler.Infrastructure\Data\UnitOfWork.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="review_handler.Infrastructure.Data.UnitOfWork/&lt;SaveChanges&gt;d__11" filename="review_handler.Infrastructure\Data\UnitOfWork.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="77" hits="6" branch="False" />
+                <line number="47" hits="6" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="77" hits="6" branch="False" />
+            <line number="47" hits="6" branch="False" />
           </lines>
         </class>
       </classes>

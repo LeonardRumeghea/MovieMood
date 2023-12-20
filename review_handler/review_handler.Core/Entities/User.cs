@@ -7,6 +7,6 @@
         public string? Email { get; set; }
         public string? Password { get; set; }
         public string? Role { get; set; }
-        public List<Entities.Review> Reviews { get; set; } = new List<Entities.Review>();
+        public List<Review> Reviews { get; set; } = new List<Review>();
     }
 }
