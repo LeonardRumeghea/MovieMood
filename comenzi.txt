@@ -1,0 +1,2 @@
+cum sa opresti nginx:
+@taskkill /f /im nginx.exe

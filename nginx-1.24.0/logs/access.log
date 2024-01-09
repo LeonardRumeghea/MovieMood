@@ -1,0 +1,8 @@
+127.0.0.1 - - [09/Jan/2024:23:05:12 +0200] "GET /tasks HTTP/1.1" 404 153 "-" "PostmanRuntime/7.36.0"
+127.0.0.1 - - [09/Jan/2024:23:06:41 +0200] "GET /task/tasks HTTP/1.1" 404 153 "-" "PostmanRuntime/7.36.0"
+127.0.0.1 - - [09/Jan/2024:23:07:22 +0200] "GET /task/tasks HTTP/1.1" 404 153 "-" "PostmanRuntime/7.36.0"
+127.0.0.1 - - [09/Jan/2024:23:09:07 +0200] "GET /task/tasks HTTP/1.1" 404 153 "-" "PostmanRuntime/7.36.0"
+127.0.0.1 - - [09/Jan/2024:23:09:40 +0200] "GET / HTTP/1.1" 200 615 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+127.0.0.1 - - [09/Jan/2024:23:09:41 +0200] "GET /favicon.ico HTTP/1.1" 404 555 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+127.0.0.1 - - [09/Jan/2024:23:09:50 +0200] "GET /task HTTP/1.1" 404 555 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+127.0.0.1 - - [09/Jan/2024:23:12:46 +0200] "GET /task/tasks HTTP/1.1" 200 202 "-" "PostmanRuntime/7.36.0"
