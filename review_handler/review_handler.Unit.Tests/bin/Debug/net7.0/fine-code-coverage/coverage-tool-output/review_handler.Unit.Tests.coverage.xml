@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.2761" branch-rate="1" version="1.9" timestamp="1703048532" lines-covered="29" lines-valid="105" branches-covered="0" branches-valid="0">
+<coverage line-rate="0.2761" branch-rate="1" version="1.9" timestamp="1703054126" lines-covered="29" lines-valid="105" branches-covered="0" branches-valid="0">
   <sources>
     <source>D:\Documents\GitHub\MovieMood\review_handler\</source>
     <source>C:\</source>

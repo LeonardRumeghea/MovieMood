@@ -3,7 +3,7 @@
 #nullable disable
 namespace review_handler.Application.Mappers
 {
-    public class ReviewMapper
+    public static class ReviewMapper
     {
         private static readonly Lazy<IMapper> Lazy =
             new(() =>
@@ -16,6 +16,7 @@ namespace review_handler.Application.Mappers
                 var mapper = config.CreateMapper();
                 return mapper;
             });
+        
         public static IMapper Mapper => Lazy.Value;
     }
 }

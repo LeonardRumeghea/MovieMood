@@ -1,0 +1,9 @@
+﻿D:\Documents\GitHub\MovieMood\review_handler\review_handler.WebUI\Controllers\ReviewController.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.WebUI\Program.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.WebUI\obj\Debug\net7.0\review_handler.WebUI.GlobalUsings.g.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.WebUI\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.WebUI\obj\Debug\net7.0\review_handler.WebUI.AssemblyInfo.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.WebUI\obj\Debug\net7.0\review_handler.WebUI.MvcApplicationPartsAssemblyInfo.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.WebUI\appsettings.Development.json
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.WebUI\appsettings.json
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.WebUI\Properties\launchSettings.json

@@ -18,7 +18,7 @@ namespace review_handler.Core.Entities
         {
             var review = new Review
             {
-                Id = new Guid(),
+                Id = Guid.NewGuid(),
                 MovieId = movieId,
                 UserId = userId,
                 MovieRating = movieRating

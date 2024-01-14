@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.818181818181818" branch-rate="0.807692307692308" lines-covered="387" lines-valid="473" branches-covered="21" branches-valid="26" complexity="158" version="0" timestamp="1703055746">
+<coverage line-rate="0.818181818181818" branch-rate="0.807692307692308" lines-covered="387" lines-valid="473" branches-covered="21" branches-valid="26" complexity="158" version="0" timestamp="1703061333">
   <sources>
     <source>D:\Documents\GitHub\MovieMood\review_handler\</source>
     <source>C:\</source>

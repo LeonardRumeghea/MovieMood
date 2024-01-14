@@ -1,11 +1,12 @@
 ﻿using review_handler.Core.Entities;
 
+#nullable disable
 namespace review_handler.Unit.Tests
 {
     public class ReviewTests
     {
         [Fact]
-        public async Task When_CreateReview_Then_ShouldSaveIt()
+        public void When_CreateReview_Then_ShouldSaveIt()
         {
             // Act
             var sut = CreateReviewSUT();

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>review_handler.Infrastructure</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>8b7fafa3-81e6-4521-bce2-9492b9b3e77d</ProjectGuid>
+  <FullPath>D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\review_handler.Infrastructure.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="D:\Documents\GitHub\MovieMood\review_handler\.sonarqube\conf\3\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">D:\Documents\GitHub\MovieMood\review_handler\.sonarqube\out\3\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">D:\Documents\GitHub\MovieMood\review_handler\.sonarqube\out\3</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>net7.0</TargetFramework>
+</ProjectInfo>

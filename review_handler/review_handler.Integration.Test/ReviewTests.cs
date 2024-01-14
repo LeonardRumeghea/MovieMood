@@ -1,4 +1,6 @@
-﻿using review_handler.Application.Commands;
+﻿using Microsoft.AspNetCore.Mvc.Testing;
+using review_handler.API.Controllers;
+using review_handler.Application.Commands;
 using review_handler.Application.Response;
 
 #nullable disable
@@ -7,6 +9,8 @@ namespace review_handler.Integration.Tests
     public class ReviewTests : BaseIntegrationTests
     {
         private const string ApiURL = "v1/api/reviews";
+
+        protected ReviewTests(WebApplicationFactory<ReviewController> factory) : base(factory) { }
 
         [Fact]
         public async Task When_CreateReview_Then_ShouldSaveIt()
@@ -103,7 +107,6 @@ namespace review_handler.Integration.Tests
         public async Task When_UpdateReviewWithInvalidId_Then_ShouldReturnNotFound()
         {
             // Arrange
-            var review = CreateReviewSUT();
 
             // Act
             var response = await HttpClient.PutAsJsonAsync($"{ApiURL}/{Guid.NewGuid()}", UpdateReviewSUT(Guid.NewGuid()));
