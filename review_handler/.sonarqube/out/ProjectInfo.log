@@ -1,0 +1,29 @@
+Product projects
+---------------------------------------
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\review_handler.Core.csproj
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Application\review_handler.Application.csproj
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\review_handler.Infrastructure.csproj
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.WebUI\review_handler.WebUI.csproj
+
+
+Test projects
+---------------------------------------
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Unit.Tests\review_handler.Unit.Tests.csproj
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Integration.Test\review_handler.Integration.Tests.csproj
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+{none}
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+

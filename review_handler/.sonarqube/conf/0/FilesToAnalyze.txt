@@ -1,0 +1,13 @@
+﻿D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Entities\Movie.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Entities\Review.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Entities\ReviewBuilder\IReviewBuilder.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Entities\ReviewBuilder\ReviewBuilder.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Entities\ReviewBuilder\ReviewBuilderDirector.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Entities\User.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Enums\Genre.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Helpers\Result.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Helpers\ResultOfEntity.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Repositories\Base\IRepository.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Repositories\IMovieRepository.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Repositories\IReviewRepository.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Repositories\IUserRepository.cs

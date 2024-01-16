@@ -9,8 +9,11 @@ namespace review_handler.Integration.Tests
     {
         protected HttpClient HttpClient { get; private set; }
 
-        protected BaseIntegrationTests()
+        protected readonly WebApplicationFactory<ReviewController> _factory;
+        protected BaseIntegrationTests(WebApplicationFactory<ReviewController> factory)
         {
+            _factory = factory;
+
             HttpClient = new WebApplicationFactory<ReviewController>()
                 .WithWebHostBuilder(builder => { })
                 .CreateClient();

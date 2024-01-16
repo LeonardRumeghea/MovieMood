@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = review_handler.Integration.Tests
-build_property.ProjectDir = D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Integration.Test\
+build_property.ProjectDir = d:\Documents\GitHub\MovieMood\review_handler\review_handler.Integration.Test\

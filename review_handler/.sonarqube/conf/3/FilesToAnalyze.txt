@@ -1,0 +1,10 @@
+﻿D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\ConfigureServices.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Data\DatabaseContext.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Data\UnitOfWork.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Migrations\20231205202128_InitialCreate.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Migrations\20231205202128_InitialCreate.Designer.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Migrations\DatabaseContextModelSnapshot.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Repositories\Base\Repository.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Repositories\MovieRepository.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Repositories\ReviewRepository.cs
+D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\Repositories\UserRepository.cs

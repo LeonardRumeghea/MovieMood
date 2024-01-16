@@ -1,0 +1,17 @@
+[
+RD:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Entities\Movie.csutf-8\
+SD:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Entities\Review.csutf-8r
+iD:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Entities\ReviewBuilder\IReviewBuilder.csutf-8q
+hD:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Entities\ReviewBuilder\ReviewBuilder.csutf-8y
+pD:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Entities\ReviewBuilder\ReviewBuilderDirector.csutf-8Z
+QD:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Entities\User.csutf-8X
+OD:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Enums\Genre.csutf-8[
+RD:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Helpers\Result.csutf-8c
+ZD:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Helpers\ResultOfEntity.csutf-8j
+aD:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Repositories\Base\IRepository.csutf-8j
+aD:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Repositories\IMovieRepository.csutf-8k
+bD:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Repositories\IReviewRepository.csutf-8i
+`D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\Repositories\IUserRepository.csutf-8‚
+wD:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\obj\Debug\net7.0\review_handler.Core.GlobalUsings.g.csutf-8Œ
+€D:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.csutf-8€
+uD:\Documents\GitHub\MovieMood\review_handler\review_handler.Core\obj\Debug\net7.0\review_handler.Core.AssemblyInfo.csutf-8
