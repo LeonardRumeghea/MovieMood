@@ -13,3 +13,18 @@ D:\Documents\GitHub\MovieMood\review_handler\review_handler.Application\obj\Debu
 D:\Documents\GitHub\MovieMood\review_handler\review_handler.Application\obj\Debug\net7.0\refint\review_handler.Application.dll
 D:\Documents\GitHub\MovieMood\review_handler\review_handler.Application\obj\Debug\net7.0\review_handler.Application.pdb
 D:\Documents\GitHub\MovieMood\review_handler\review_handler.Application\obj\Debug\net7.0\ref\review_handler.Application.dll
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Application\bin\Debug\net7.0\review_handler.Application.deps.json
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Application\bin\Debug\net7.0\review_handler.Application.dll
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Application\bin\Debug\net7.0\review_handler.Application.pdb
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Application\bin\Debug\net7.0\review_handler.Core.dll
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Application\bin\Debug\net7.0\review_handler.Core.pdb
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Application\obj\Debug\net7.0\review_handler.Application.csproj.AssemblyReference.cache
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Application\obj\Debug\net7.0\review_handler.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Application\obj\Debug\net7.0\review_handler.Application.AssemblyInfoInputs.cache
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Application\obj\Debug\net7.0\review_handler.Application.AssemblyInfo.cs
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Application\obj\Debug\net7.0\review_handler.Application.csproj.CoreCompileInputs.cache
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Application\obj\Debug\net7.0\review_handler.Application.csproj.CopyComplete
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Application\obj\Debug\net7.0\review_handler.Application.dll
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Application\obj\Debug\net7.0\refint\review_handler.Application.dll
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Application\obj\Debug\net7.0\review_handler.Application.pdb
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Application\obj\Debug\net7.0\ref\review_handler.Application.dll

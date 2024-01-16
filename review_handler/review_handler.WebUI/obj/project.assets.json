@@ -3747,24 +3747,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Leonard\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\tomes\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.WebUI\\review_handler.WebUI.csproj",
+      "projectUniqueName": "D:\\Facultate\\Master I\\TAIP\\Project\\MovieMood\\review_handler\\review_handler.WebUI\\review_handler.WebUI.csproj",
       "projectName": "review_handler.WebUI",
-      "projectPath": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.WebUI\\review_handler.WebUI.csproj",
-      "packagesPath": "C:\\Users\\Leonard\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.WebUI\\obj\\",
+      "projectPath": "D:\\Facultate\\Master I\\TAIP\\Project\\MovieMood\\review_handler\\review_handler.WebUI\\review_handler.WebUI.csproj",
+      "packagesPath": "C:\\Users\\tomes\\.nuget\\packages\\",
+      "outputPath": "D:\\Facultate\\Master I\\TAIP\\Project\\MovieMood\\review_handler\\review_handler.WebUI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Leonard\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\tomes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3772,18 +3767,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Application\\review_handler.Application.csproj": {
-              "projectPath": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Application\\review_handler.Application.csproj"
+            "D:\\Facultate\\Master I\\TAIP\\Project\\MovieMood\\review_handler\\review_handler.Application\\review_handler.Application.csproj": {
+              "projectPath": "D:\\Facultate\\Master I\\TAIP\\Project\\MovieMood\\review_handler\\review_handler.Application\\review_handler.Application.csproj"
             },
-            "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Infrastructure\\review_handler.Infrastructure.csproj": {
-              "projectPath": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Infrastructure\\review_handler.Infrastructure.csproj"
+            "D:\\Facultate\\Master I\\TAIP\\Project\\MovieMood\\review_handler\\review_handler.Infrastructure\\review_handler.Infrastructure.csproj": {
+              "projectPath": "D:\\Facultate\\Master I\\TAIP\\Project\\MovieMood\\review_handler\\review_handler.Infrastructure\\review_handler.Infrastructure.csproj"
             }
           }
         }
@@ -3848,7 +3842,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

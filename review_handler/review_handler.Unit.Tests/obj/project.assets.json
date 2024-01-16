@@ -5663,24 +5663,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Leonard\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\tomes\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Unit.Tests\\review_handler.Unit.Tests.csproj",
+      "projectUniqueName": "D:\\Facultate\\Master I\\TAIP\\Project\\MovieMood\\review_handler\\review_handler.Unit.Tests\\review_handler.Unit.Tests.csproj",
       "projectName": "review_handler.Unit.Tests",
-      "projectPath": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Unit.Tests\\review_handler.Unit.Tests.csproj",
-      "packagesPath": "C:\\Users\\Leonard\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Unit.Tests\\obj\\",
+      "projectPath": "D:\\Facultate\\Master I\\TAIP\\Project\\MovieMood\\review_handler\\review_handler.Unit.Tests\\review_handler.Unit.Tests.csproj",
+      "packagesPath": "C:\\Users\\tomes\\.nuget\\packages\\",
+      "outputPath": "D:\\Facultate\\Master I\\TAIP\\Project\\MovieMood\\review_handler\\review_handler.Unit.Tests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Leonard\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\tomes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5694,8 +5689,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj": {
-              "projectPath": "D:\\Documents\\GitHub\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj"
+            "D:\\Facultate\\Master I\\TAIP\\Project\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj": {
+              "projectPath": "D:\\Facultate\\Master I\\TAIP\\Project\\MovieMood\\review_handler\\review_handler.Core\\review_handler.Core.csproj"
             }
           }
         }
@@ -5751,7 +5746,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

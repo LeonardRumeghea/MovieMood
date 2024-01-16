@@ -17,3 +17,22 @@ D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\obj\D
 D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\obj\Debug\net7.0\review_handler.Infrastructure.pdb
 D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\obj\Debug\net7.0\review_handler.Infrastructure.genruntimeconfig.cache
 D:\Documents\GitHub\MovieMood\review_handler\review_handler.Infrastructure\obj\Debug\net7.0\ref\review_handler.Infrastructure.dll
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\bin\Debug\net7.0\review_handler.Infrastructure.deps.json
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\bin\Debug\net7.0\review_handler.Infrastructure.runtimeconfig.json
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\bin\Debug\net7.0\review_handler.Infrastructure.dll
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\bin\Debug\net7.0\review_handler.Infrastructure.pdb
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\bin\Debug\net7.0\review_handler.Application.dll
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\bin\Debug\net7.0\review_handler.Core.dll
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\bin\Debug\net7.0\review_handler.Application.pdb
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\bin\Debug\net7.0\review_handler.Core.pdb
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\obj\Debug\net7.0\review_handler.Infrastructure.csproj.AssemblyReference.cache
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\obj\Debug\net7.0\review_handler.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\obj\Debug\net7.0\review_handler.Infrastructure.AssemblyInfoInputs.cache
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\obj\Debug\net7.0\review_handler.Infrastructure.AssemblyInfo.cs
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\obj\Debug\net7.0\review_handler.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\obj\Debug\net7.0\review_handler.Infrastructure.csproj.CopyComplete
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\obj\Debug\net7.0\review_handler.Infrastructure.dll
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\obj\Debug\net7.0\refint\review_handler.Infrastructure.dll
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\obj\Debug\net7.0\review_handler.Infrastructure.pdb
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\obj\Debug\net7.0\review_handler.Infrastructure.genruntimeconfig.cache
+D:\Facultate\Master I\TAIP\Project\MovieMood\review_handler\review_handler.Infrastructure\obj\Debug\net7.0\ref\review_handler.Infrastructure.dll
