@@ -1,6 +1,7 @@
 # Project Information
 
 ## **Recommendation Movie App**
+* [Technical Report](https://docs.google.com/document/d/181c7ft0E3YTJUhs6ya9fk-weajupk3Sg5lHi4kPpMXg/edit?usp=sharing)
 
 ## Team Members
 * Andreea Jinga - andreea2001jinga@gmail.com
